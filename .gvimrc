@@ -2,6 +2,7 @@ set columns=100
 set lines=60
 set guioptions-=T
 
+set background=dark
 set gfn=Ricty:h18
 set gfw=Ricty:h18
 set antialias
