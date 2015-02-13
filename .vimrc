@@ -140,11 +140,11 @@ try
   call unite#filters#matcher_default#use(['matcher_fuzzy'])
 catch
 endtry
-nnoremap <silent> <space>uy :<C-u>Unite history/yank<CR>
-nnoremap <silent> <space>ub :<C-u>Unite buffer<CR>
-nnoremap <silent> <space>uf :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
-nnoremap <silent> <space>ur :<C-u>Unite -buffer-name=register register<CR>
-nnoremap <silent> <space>uu :<C-u>Unite file_mru buffer<CR>
+nnoremap <silent> ,uy :<C-u>Unite history/yank<CR>
+nnoremap <silent> ,ub :<C-u>Unite buffer<CR>
+nnoremap <silent> ,uf :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
+nnoremap <silent> ,ur :<C-u>Unite -buffer-name=register register<CR>
+nnoremap <silent> ,uu :<C-u>Unite file_mru buffer<CR>
 
 " vim-plug
 call plug#begin('~/.vim/plugged')
