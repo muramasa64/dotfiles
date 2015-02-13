@@ -150,6 +150,8 @@ nnoremap <silent> ,uu :<C-u>Unite file_mru buffer<CR>
 call plug#begin('~/.vim/plugged')
 Plug 'altercation/vim-colors-solarized'
 Plug 'bronson/vim-trailing-whitespace'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 " solarized
@@ -158,6 +160,10 @@ set background=dark
 let g:solarized_visibility = "low"
 let g:solarized_contrast = "high"
 colorscheme solarized
+
+" vim-gitgutter
+nnoremap <silent> ,gg :<C-u>GitGutterToggle<CR>
+nnoremap <silent> ,gh :<C-u>GitGutterLineHighlightsToggle<CR>
 
 " colorize 80 column
 "if (exists('+colorcolumn'))
