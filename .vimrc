@@ -152,6 +152,7 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
+Plug 'junegunn/vim-easy-align'
 call plug#end()
 
 " solarized
@@ -164,6 +165,9 @@ colorscheme solarized
 " vim-gitgutter
 nnoremap <silent> ,gg :<C-u>GitGutterToggle<CR>
 nnoremap <silent> ,gh :<C-u>GitGutterLineHighlightsToggle<CR>
+
+" Easy align interactive
+vnoremap <silent> <Enter> :EasyAlign<CR>
 
 " colorize 80 column
 "if (exists('+colorcolumn'))
