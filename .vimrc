@@ -60,6 +60,7 @@ autocmd BufNewFile,BufRead app/**/*.rb set ft=ruby fenc=utf-8
 autocmd BufNewFile,BufRead app/**/*.yml set ft=ruby fenc=utf-8
 autocmd FileType c hi Comment ctermfg=darkcyan
 autocmd FileType cpp hi Comment ctermfg=darkcyan
+autocmd FileType php set tabstop=4 tw=0 sw=4 expandtab
 
 " rubycomplete.vim
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
