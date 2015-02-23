@@ -53,8 +53,8 @@ filetype plugin indent on
 syntax on
 hi Search term=reverse ctermbg=DarkBlue ctermfg=NONE
 autocmd FileType vim set tabstop=2 tw=0 sw=2 expandtab
-autocmd FileType ruby set tabstop=2 tw=0 sw=2 expandtab
-autocmd FileType eruby set tabstop=2 tw=0 sw=2 expandtab
+autocmd FileType ruby set tabstop=2 sts=2 tw=0 sw=2 expandtab
+autocmd FileType eruby set tabstop=2 sts=2 tw=0 sw=2 expandtab
 autocmd BufNewFile,BufRead app/*/*.rhtml set ft=mason fenc=utf-8
 autocmd BufNewFile,BufRead app/**/*.rb set ft=ruby fenc=utf-8
 autocmd BufNewFile,BufRead app/**/*.yml set ft=ruby fenc=utf-8
