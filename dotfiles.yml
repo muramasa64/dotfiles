@@ -4,12 +4,16 @@
   remote_user: vagrant
   tasks:
     - name: install packages
+      sudo: yes
       yum:
-        name=ruby
+        name={{ item }}
         state=latest
       with_items:
         - ruby
         - git
+        - zsh
+        - epel-release
+        - colordiff
 
     - name: create dotfiles directory
       file:
@@ -30,6 +34,12 @@
     - name: symlink dotfiles
       command:
         ~/dotfiles/dotfileslink.rb
+
+    - name: change default shell to zsh
+      sudo: yes
+      user:
+        name=vagrant
+        shell=/bin/zsh
 
     - name: install vim-neobundle
       git:
