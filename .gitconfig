@@ -18,3 +18,5 @@
 	default = simple
 [color]
 	ui = auto
+[merge]
+	defaultToUpstream = true
