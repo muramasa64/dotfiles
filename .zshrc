@@ -20,7 +20,6 @@ else
 fi
 
 alias g='git'
-alias vim='Vim'
 
 ########################################
 # OS 別の設定
@@ -29,6 +28,8 @@ case ${OSTYPE} in
         #Mac用の設定
         export CLICOLOR=1
         alias ls='ls -G -F'
+        alias vim='Vim'
+        alias rm='rmtrash'
         ;;
     linux*)
         #Linux用の設定
