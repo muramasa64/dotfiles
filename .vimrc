@@ -122,7 +122,7 @@ NeoBundle 'Shougo/neomru.vim'
 "NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'Shougo/neosnippet.vim'
 NeoBundle 'scrooloose/syntastic.git'
-"NeoBundle 'kakkyz81/evervim.git'
+NeoBundle 'kakkyz81/evervim.git'
 NeoBundle 'tyru/open-browser.vim'
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'kannokanno/previm'
@@ -176,3 +176,9 @@ vnoremap <silent> <Enter> :EasyAlign<CR>
 "    highlight ColorColumn ctermbg=9
 "endif
 
+" evervim
+let g:evervim_devtoken='evervim_devtoken'
+nnoremap ,el :EvervimNotebookList<CR>
+nnoremap ,es :EvervimSearchByQuery<space>
+nnoremap ,ec :EvervimCreateNote<CR>
+nnoremap ,et :EvervimListTags<CR>
