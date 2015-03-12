@@ -1,0 +1,2 @@
+" evervim devtoken
+let g:evervim_devtoken='evervim_devtoken'

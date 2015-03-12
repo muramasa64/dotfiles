@@ -122,7 +122,7 @@ NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'Shougo/neosnippet.vim'
 NeoBundle 'scrooloose/syntastic.git'
-"NeoBundle 'kakkyz81/evervim.git'
+NeoBundle 'kakkyz81/evervim.git'
 NeoBundle 'tyru/open-browser.vim'
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'kannokanno/previm'
@@ -136,6 +136,11 @@ NeoBundle 'kana/vim-submode'
 
 call neobundle#end()
 NeoBundleCheck
+
+" local settings
+if filereadable(expand('~/.vimrc.local'))
+  source ~/.vimrc.local
+endif
 
 " unite
 let g:unite_source_history_yank_enable = 1
@@ -179,6 +184,12 @@ vnoremap <silent> <Enter> :EasyAlign<CR>
 "    set colorcolumn=80
 "    highlight ColorColumn ctermbg=9
 "endif
+
+" evervim
+nnoremap ,el :EvervimNotebookList<CR>
+nnoremap ,es :EvervimSearchByQuery<space>
+nnoremap ,ec :EvervimCreateNote<CR>
+nnoremap ,et :EvervimListTags<CR>
 
 " Markdown Preview
 " <F7>でプレビュー
