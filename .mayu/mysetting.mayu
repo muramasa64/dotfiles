@@ -1,0 +1,35 @@
+key *IC- = 
+
+include "109.mayu"
+include "dvorak104on109.mayu"
+
+keymap Global
+
+mod shift       += !!Space      # SandS
+mod control     +=   ‰p”       # ‰p”‚ğCtrl‚É
+key *‰p”       =   *LControl
+key *IC-•ÏŠ·    =   $ToggleIME  # •ÏŠ·‚ğIME ON/OFF‚É
+
+key C-LeftSquareBracket = Esc
+key C-M         = Enter
+key C-H         = BackSpace
+key C-D         = Delete
+
+key *–³•ÏŠ·     =               # –³Œø‰»
+mod mod0        += –³•ÏŠ·
+key M0-*H       = *Left
+key M0-*C       = *Up
+key M0-*T       = *Down
+key M0-*N       = *Right
+key M0-*G       = *Home
+key M0-*R       = *End
+
+#key *‚Ğ‚ç‚ª‚È    =              # –³Œø‰»
+#mod RightWindows += ‚Ğ‚ç‚ª‚È
+#key *‚Ğ‚ç‚ª‚È    = *RWindows
+
+window PuTTY /putty\.exe/ : Global
+key C-LeftSquareBracket = C-LeftSquareBracket
+key C-M = C-M
+key C-H = C-H
+key C-D = C-D

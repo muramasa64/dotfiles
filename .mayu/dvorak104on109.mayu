@@ -1,0 +1,84 @@
+#
+# DVORAK104on109.mayu - dvorak 104 layout on 109 layout for 窓使いの憂鬱
+#
+# http://mayu.sourceforge.net/mayu/contrib/DVORAKon109.mayu で配布されている
+# DVORAKon109.mayuを改造し、109キーを104キーに変更した上でdvorak化したもの。
+# 104キーのdvorakキー配列を109キー上に実現するという、かなり変則的な設定。
+# キー配列は、以下のようになる。空白の部分は変更しない。
+#
+# ----------------------------------------------------------------------------
+# |  ~ |  ! |  @ |  # |  $ |  % |  ^ |  & |  * |  ( |  ) |  { |  } |    |    |
+# | `  | 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9  | 0  | [  | ]  | BS |    |
+# ----------------------------------------------------------------------------
+# |       |  " |  < |  > |  P |  Y |  F |  G |  C |  R |  L |  ? |  + |      |
+# |       | '  | ,  | .  |    |    |    |    |    |    |    | /  | =  |      |
+# ----------------------------------------------------------------------     |
+# |        |  A |  O |  E |  U |  I |  D |  H |  T |  N |  S |  _ |  | |     |
+# |        |    |    |    |    |    |    |    |    |    |    | -  | \  |     |
+# ----------------------------------------------------------------------------
+# |          |  : |  Q |  J |  K |  X |  B |  M |  W |  V |  Z |      |      |
+# |          | ;  |    |    |    |    |    |    |    |    |    |RShift|      |
+# ----------------------------------------------------------------------------
+#
+
+define KBDDVORAKon109
+
+# 一段目
+def subst ~S-*半角/全角		= $GRAVE_ACCENT
+def subst  S-*半角/全角		= $TILDE
+def subst  A-半角/全角		= $ToggleIME
+def subst  S-*_2			= $COMMERCIAL_AT
+def subst  S-*_6			= $CIRCUMFLEX_ACCENT
+def subst  S-*_7			= $AMPERSAND
+def subst  S-*_8			= $ASTERISK
+def subst  S-*_9			= $LEFT_PARENTHESIS
+def subst  S-*_0			= $RIGHT_PARENTHESIS
+def subst *Minus			= *LeftSquareBracket
+def subst *CircumflexAccent		= *RightSquareBracket
+def subst *YenSign			= BackSpace
+
+# 二段目
+def subst *Q				= $APOSTROPHE 
+def subst S-*Q				= $QUOTATION_MARK
+def subst *W				= *Comma
+def subst *E				= *Period
+def subst *R				= *P
+def subst *T				= *Y
+def subst *Y				= *F
+def subst *U				= *G
+def subst *I				= *C
+def subst *O				= *R
+def subst *P				= *L
+def subst *Atmark			= *Slash
+def subst ~S-*LeftSquareBracket		= $EQUALS_SIGN
+def subst  S-*LeftSquareBracket 	= $PLUS_SIGN
+
+# 三段目
+def subst *A				= *A
+def subst *S				= *O
+def subst *D				= *E
+def subst *F				= *U
+def subst *G				= *I
+def subst *H				= *D
+def subst *J				= *H
+def subst *K				= *T
+def subst *L				= *N
+def subst *Semicolon			= *S
+def subst *Colon			= *Minus
+def subst S-*Colon			= $LOW_LINE
+def subst *RightSquareBracket		= *YenSign
+
+# 四段目
+def subst *Z				= *Semicolon
+def subst S-*Z				= $COLON
+def subst *X				= *Q
+def subst *C				= *J
+def subst *V				= *K
+def subst *B				= *X
+def subst *N				= *B
+def subst *M				= *M
+def subst *Comma			= *W
+def subst *Period			= *V
+def subst *Slash			= *Z
+mod shift += BackSlash
+def subst *BackSlash		= *RightShift
