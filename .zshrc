@@ -20,6 +20,12 @@ else
 fi
 
 alias g='git'
+alias gl='git l'
+alias ga='git add'
+alias gch='git checkout'
+alias gc='git commit'
+alias gcv='git commit -v'
+alias gn='git now'
 alias vi='vim'
 
 ########################################
