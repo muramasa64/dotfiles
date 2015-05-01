@@ -4,3 +4,4 @@
 .*.un~
 *~
 /vendor/bundle/
+fuel/app/config/isobe/*
