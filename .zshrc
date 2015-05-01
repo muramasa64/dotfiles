@@ -43,7 +43,9 @@ case ${OSTYPE} in
         ;;
 esac
 
-source /usr/local/bin/aws_zsh_completer.sh
+if [[ -e /usr/local/bin/aws_zsh_completer.sh ]]; then
+    source /usr/local/bin/aws_zsh_completer.sh
+fi
 
 # golang
 export GOPATH=~/.gocode
