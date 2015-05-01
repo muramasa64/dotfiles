@@ -44,3 +44,7 @@ case ${OSTYPE} in
 esac
 
 source /usr/local/bin/aws_zsh_completer.sh
+
+# golang
+export GOPATH=~/.gocode
+
