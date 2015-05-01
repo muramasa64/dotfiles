@@ -119,7 +119,9 @@ NeoBundle 'Shougo/vimproc.vim'
 NeoBundle 'Shougo/vimshell'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neomru.vim'
-NeoBundle 'Shougo/neocomplete.vim'
+if has('lua')
+  NeoBundle 'Shougo/neocomplete.vim'
+endif
 NeoBundle 'Shougo/neosnippet.vim'
 NeoBundle 'scrooloose/syntastic.git'
 NeoBundle 'kakkyz81/evervim.git'
