@@ -135,6 +135,7 @@ NeoBundle 'kannokanno/previm'
 NeoBundle 'kana/vim-submode'
 "NeoBundle 'Rykka/riv.vim'
 "NeoBundle 'Rykka/InstantRst'
+NeoBundle 'rizzatti/dash.vim'
 
 call neobundle#end()
 NeoBundleCheck
