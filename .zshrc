@@ -43,8 +43,18 @@ case ${OSTYPE} in
         ;;
 esac
 
-if [[ -e /usr/local/bin/aws_zsh_completer.sh ]]; then
-    source /usr/local/bin/aws_zsh_completer.sh
+_homebrew-installed() {
+  type brew &> /dev/null
+}
+
+_awscli-homebrew-installed() {
+  brew --prefix awscli &> /dev/null
+}
+
+if _homebrew-installed && _awscli-homebrew-installed ; then
+  source $(brew --prefix)/opt/awscli/libexec/bin/aws_zsh_completer.sh
+else
+  source `which aws_zsh_completer.sh`
 fi
 
 # golang
