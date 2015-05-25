@@ -58,5 +58,5 @@ else
 fi
 
 # golang
-export GOPATH=~/.gocode
+export GOPATH=~/go
 
