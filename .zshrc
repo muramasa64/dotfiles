@@ -26,6 +26,8 @@ alias gch='git checkout'
 alias gc='git commit'
 alias gcv='git commit -v'
 alias gn='git now'
+alias gs='git status --short --branch'
+alias gst='git status --long'
 alias vi='vim'
 
 ########################################
