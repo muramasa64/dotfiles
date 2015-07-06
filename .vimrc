@@ -28,7 +28,7 @@ set title
 set showcmd
 set cmdheight=2
 set laststatus=2
-set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}
+set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}\ [POS=%04l,%04v]
 set wildmenu
 
 set backspace=2
