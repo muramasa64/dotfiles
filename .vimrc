@@ -171,8 +171,10 @@ call plug#end()
 " solarized
 syntax enable
 set background=dark
+let g:solarized_termcolor = 256
 let g:solarized_visibility = "normal"
-let g:solarized_contrast = "high"
+let g:solarized_contrast = "normal"
+let g:solarized_termtrans = 1
 colorscheme solarized
 
 " vim-gitgutter
