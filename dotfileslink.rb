@@ -10,6 +10,7 @@ dotfiles = [
   '.zsh.d',
   '.zshenv',
   '.zshrc',
+  '.vim',
 ]
 
 dir = File.dirname(File.expand_path(__FILE__))
@@ -24,3 +25,6 @@ dotfiles.each do |f|
     exit 1
   end
 end
+
+# install vim-plug
+`curl -fLo ~/.vim/autoload/plug.vim  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`
