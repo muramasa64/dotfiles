@@ -8,7 +8,7 @@ set gfw=Ricty:h18
 set antialias
 
 highlight CursorIM guibg=Purple guifg=NONE
-highlight Search guibg=DarkBlue guifg=NONE
+"highlight Search guibg=DarkBlue guifg=NONE
 
 map <D-w> :q<CR>gT
 map <D-t> :tabnew<CR>
