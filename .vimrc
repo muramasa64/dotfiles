@@ -136,6 +136,7 @@ NeoBundle 'kana/vim-submode'
 "NeoBundle 'Rykka/riv.vim'
 "NeoBundle 'Rykka/InstantRst'
 NeoBundle 'rizzatti/dash.vim'
+NeoBundle 'stephpy/vim-yaml'
 
 call neobundle#end()
 NeoBundleCheck
