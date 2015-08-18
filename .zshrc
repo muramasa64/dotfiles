@@ -13,7 +13,7 @@ autoload -Uz colors
 colors
 
 # colordiff
-if [[ -x `which colordiff` ]]; then
+if [[ -x `which colordiff &> /dev/null` ]]; then
   alias diff='colordiff -u'
 else
   alias diff='diff -u'
@@ -56,7 +56,7 @@ _awscli-homebrew-installed() {
 if _homebrew-installed && _awscli-homebrew-installed ; then
   source $(brew --prefix)/opt/awscli/libexec/bin/aws_zsh_completer.sh
 else
-  source `which aws_zsh_completer.sh`
+  source `which aws_zsh_completer.sh` &> /dev/null
 fi
 
 # golang
