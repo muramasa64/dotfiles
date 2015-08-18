@@ -98,53 +98,52 @@ endif
 " matchit
 source $VIMRUNTIME/macros/matchit.vim
 
-" vimproc
-if has('mac')
-    let g:vimproc_dll_path = $VIMRUNTIME . '/autoload/vimproc_mac.so'
-elseif has('win32')
-    let g:vimproc_dll_path = $HOME . '.vim/bundle/vimproc/autoload/vimproc_win32.dll'
-elseif has('win64')
-    let g:vimproc_dll_path = $HOME . '.vim/bundle/vimproc/autoload/vimproc_win64.dll'
-endif
-
-" NeoBundle
-set runtimepath+=~/.vim/bundle/neobundle.vim/
-call neobundle#begin(expand('~/.vim/bundle/'))
-NeoBundleFetch 'Shougo/neobundle.vim'
-
-NeoBundle 'Shougo/neobundle.vim'
-NeoBundle 'tpope/vim-surround'
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'Shougo/vimproc.vim'
-NeoBundle 'Shougo/vimshell'
-NeoBundle 'Shougo/unite.vim'
-NeoBundle 'Shougo/neomru.vim'
+" vim-plug
+call plug#begin('~/.vim/plugged')
+"Plug 'Shougo/neobundle.vim'
+"Plug 'Shougo/vimproc.vim'
+"Plug 'Shougo/vimshell'
+"Plug 'Shougo/unite.vim'
+"Plug 'Shougo/neomru.vim'
+"Plug 'Shougo/neosnippet.vim'
+Plug 'scrooloose/syntastic.git'
+"Plug 'kakkyz81/evervim.git'
+"Plug 'tyru/open-browser.vim'
+Plug 'plasticboy/vim-markdown'
+Plug 'kannokanno/previm'
+"Plug 'vim-scripts/vim-auto-save'
+"Plug 'syui/cscroll.vim'
+Plug 'kana/vim-submode'
+"Plug 'Rykka/riv.vim'
+"Plug 'Rykka/InstantRst'
+"Plug 'rizzatti/dash.vim'
+Plug 'stephpy/vim-yaml'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-fugitive'
+Plug 'altercation/vim-colors-solarized'
+Plug 'bronson/vim-trailing-whitespace'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
+Plug 'junegunn/vim-easy-align'
 if has('lua')
-  NeoBundle 'Shougo/neocomplete.vim'
+  Plug 'Shougo/neocomplete.vim'
 endif
-NeoBundle 'Shougo/neosnippet.vim'
-NeoBundle 'scrooloose/syntastic.git'
-NeoBundle 'kakkyz81/evervim.git'
-NeoBundle 'tyru/open-browser.vim'
-NeoBundle 'plasticboy/vim-markdown'
-NeoBundle 'kannokanno/previm'
-NeoBundle 'tyru/open-browser.vim'
-NeoBundle 'vim-scripts/vim-auto-save'
-NeoBundle 'kannokanno/previm'
-"NeoBundle 'syui/cscroll.vim'
-NeoBundle 'kana/vim-submode'
-"NeoBundle 'Rykka/riv.vim'
-"NeoBundle 'Rykka/InstantRst'
-NeoBundle 'rizzatti/dash.vim'
-NeoBundle 'stephpy/vim-yaml'
 
-call neobundle#end()
-NeoBundleCheck
+call plug#end()
 
 " local settings
 if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
 endif
+
+"" vimproc
+"if has('mac')
+"    let g:vimproc_dll_path = $VIMRUNTIME . '/autoload/vimproc_mac.so'
+"elseif has('win32')
+"    let g:vimproc_dll_path = $HOME . '.vim/bundle/vimproc/autoload/vimproc_win32.dll'
+"elseif has('win64')
+"    let g:vimproc_dll_path = $HOME . '.vim/bundle/vimproc/autoload/vimproc_win64.dll'
+"endif
 
 " unite
 let g:unite_source_history_yank_enable = 1
@@ -159,15 +158,6 @@ nnoremap <silent> ,ub :<C-u>Unite buffer<CR>
 nnoremap <silent> ,uf :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
 nnoremap <silent> ,ur :<C-u>Unite -buffer-name=register register<CR>
 nnoremap <silent> ,uu :<C-u>Unite file_mru buffer<CR>
-
-" vim-plug
-call plug#begin('~/.vim/plugged')
-Plug 'altercation/vim-colors-solarized'
-Plug 'bronson/vim-trailing-whitespace'
-Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-fugitive'
-Plug 'junegunn/vim-easy-align'
-call plug#end()
 
 " solarized
 syntax enable
@@ -191,15 +181,15 @@ vnoremap <silent> <Enter> :EasyAlign<CR>
 "    highlight ColorColumn ctermbg=9
 "endif
 
-" evervim
-nnoremap ,el :EvervimNotebookList<CR>
-nnoremap ,es :EvervimSearchByQuery<space>
-nnoremap ,ec :EvervimCreateNote<CR>
-nnoremap ,et :EvervimListTags<CR>
+"" evervim
+"nnoremap ,el :EvervimNotebookList<CR>
+"nnoremap ,es :EvervimSearchByQuery<space>
+"nnoremap ,ec :EvervimCreateNote<CR>
+"nnoremap ,et :EvervimListTags<CR>
 
-" Markdown Preview
-" <F7>でプレビュー
-nnoremap <silent> <F7> :PrevimOpen<CR>
+"" Markdown Preview
+"" <F7>でプレビュー
+"nnoremap <silent> <F7> :PrevimOpen<CR>
 
 " vim-markdown
 let g:vim_markdown_folding_disabled=1
