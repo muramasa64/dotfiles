@@ -125,6 +125,7 @@ Plug 'bronson/vim-trailing-whitespace'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/vim-easy-align'
+Plug 'elixir-lang/vim-elixir'
 if has('lua')
   Plug 'Shougo/neocomplete.vim'
 endif
