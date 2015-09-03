@@ -21,3 +21,9 @@
 	ui = auto
 [merge]
 	defaultToUpstream = true
+	ff = false
+[pull]
+	rebase = preserve
+[branch "master"]
+	mergeoptions = --no-ff
+	rebase = true
