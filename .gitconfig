@@ -15,6 +15,7 @@
 	co = checkout
 	cv = commit -v
 	n = now --all --stat
+	b = branch
 [push]
 	default = simple
 [color]
