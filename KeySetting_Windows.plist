@@ -167,7 +167,12 @@
 			<key>&apos; &apos;</key>
 			<dict>
 				<key>command</key>
-				<string>convert</string>
+				<string>convertOrSpace</string>
+			</dict>
+			<key>shift+&apos; &apos;</key>
+			<dict>
+				<key>command</key>
+				<string>convert,show_candidate</string>
 			</dict>
 			<key>option+&apos; &apos;</key>
 			<dict>
@@ -450,7 +455,7 @@
 			<key>cancelOperation:</key>
 			<dict>
 				<key>command</key>
-				<string>delete_all</string>
+				<string>cancel_phrase_conversion</string>
 			</dict>
 			<key>control+&apos;[&apos;</key>
 			<dict>
@@ -485,12 +490,12 @@
 			<key>moveLeft:</key>
 			<dict>
 				<key>command</key>
-				<string>shorten_segment</string>
+				<string>backward_segment</string>
 			</dict>
 			<key>moveRight:</key>
 			<dict>
 				<key>command</key>
-				<string>lengthen_segment</string>
+				<string>forward_segment</string>
 			</dict>
 			<key>moveUp:</key>
 			<dict>
@@ -500,7 +505,7 @@
 			<key>moveDown:</key>
 			<dict>
 				<key>command</key>
-				<string>forward_segment</string>
+				<string>show_candidate,forward_candidate</string>
 			</dict>
 			<key>scrollToBeginningOfDocument:</key>
 			<dict>
@@ -535,12 +540,12 @@
 			<key>moveLeftAndModifySelection:</key>
 			<dict>
 				<key>command</key>
-				<string>backward_segment</string>
+				<string>shorten_segment</string>
 			</dict>
 			<key>moveRightAndModifySelection:</key>
 			<dict>
 				<key>command</key>
-				<string>forward_segment</string>
+				<string>lengthen_segment</string>
 			</dict>
 			<key>control+&apos;k&apos;</key>
 			<dict>
@@ -568,7 +573,7 @@
 			<key>deleteBackward:</key>
 			<dict>
 				<key>command</key>
-				<string>cancel_phrase_conversion</string>
+				<string>cancel_all_conversion</string>
 			</dict>
 			<key>&apos; &apos;</key>
 			<dict>
@@ -588,7 +593,7 @@
 			<key>cancelOperation:</key>
 			<dict>
 				<key>command</key>
-				<string>delete_all</string>
+				<string>cancel_phrase_conversion</string>
 			</dict>
 			<key>control+&apos;[&apos;</key>
 			<dict>
@@ -613,12 +618,12 @@
 			<key>moveLeft:</key>
 			<dict>
 				<key>command</key>
-				<string>shorten_segment</string>
+				<string>backward_segment</string>
 			</dict>
 			<key>moveRight:</key>
 			<dict>
 				<key>command</key>
-				<string>lengthen_segment</string>
+				<string>forward_segment</string>
 			</dict>
 			<key>moveUp:</key>
 			<dict>
@@ -628,7 +633,7 @@
 			<key>moveDown:</key>
 			<dict>
 				<key>command</key>
-				<string>forward_segment</string>
+				<string>forward_candidate</string>
 			</dict>
 			<key>scrollToBeginningOfDocument:</key>
 			<dict>
@@ -673,22 +678,22 @@
 			<key>moveLeftAndModifySelection:</key>
 			<dict>
 				<key>command</key>
-				<string>backward_segment</string>
+				<string>shorten_segment</string>
 			</dict>
 			<key>moveRightAndModifySelection:</key>
 			<dict>
 				<key>command</key>
-				<string>forward_segment</string>
+				<string>lengthen_segment</string>
 			</dict>
 			<key>tab</key>
 			<dict>
 				<key>command</key>
-				<string>forward_page_candidate</string>
+				<string>forward_candidate_sortstyle</string>
 			</dict>
 			<key>shift+tab</key>
 			<dict>
 				<key>command</key>
-				<string>backward_page_candidate</string>
+				<string>backward_candidate_sortstyle</string>
 			</dict>
 			<key>control+&apos;k&apos;</key>
 			<dict>
@@ -704,46 +709,82 @@
 			<dict>
 				<key>command</key>
 				<string>choose_1st_candidate</string>
+				<key>character</key>
+				<string>１</string>
+				<key>romanCharacter</key>
+				<string>1</string>
 			</dict>
 			<key>&apos;2&apos;</key>
 			<dict>
 				<key>command</key>
 				<string>choose_2nd_candidate</string>
+				<key>character</key>
+				<string>２</string>
+				<key>romanCharacter</key>
+				<string>2</string>
 			</dict>
 			<key>&apos;3&apos;</key>
 			<dict>
 				<key>command</key>
 				<string>choose_3rd_candidate</string>
+				<key>character</key>
+				<string>３</string>
+				<key>romanCharacter</key>
+				<string>3</string>
 			</dict>
 			<key>&apos;4&apos;</key>
 			<dict>
 				<key>command</key>
 				<string>choose_4th_candidate</string>
+				<key>character</key>
+				<string>４</string>
+				<key>romanCharacter</key>
+				<string>4</string>
 			</dict>
 			<key>&apos;5&apos;</key>
 			<dict>
 				<key>command</key>
 				<string>choose_5th_candidate</string>
+				<key>character</key>
+				<string>５</string>
+				<key>romanCharacter</key>
+				<string>5</string>
 			</dict>
 			<key>&apos;6&apos;</key>
 			<dict>
 				<key>command</key>
 				<string>choose_6th_candidate</string>
+				<key>character</key>
+				<string>６</string>
+				<key>romanCharacter</key>
+				<string>6</string>
 			</dict>
 			<key>&apos;7&apos;</key>
 			<dict>
 				<key>command</key>
 				<string>choose_7th_candidate</string>
+				<key>character</key>
+				<string>７</string>
+				<key>romanCharacter</key>
+				<string>7</string>
 			</dict>
 			<key>&apos;8&apos;</key>
 			<dict>
 				<key>command</key>
 				<string>choose_8th_candidate</string>
+				<key>character</key>
+				<string>８</string>
+				<key>romanCharacter</key>
+				<string>8</string>
 			</dict>
 			<key>&apos;9&apos;</key>
 			<dict>
 				<key>command</key>
 				<string>choose_9th_candidate</string>
+				<key>character</key>
+				<string>９</string>
+				<key>romanCharacter</key>
+				<string>9</string>
 			</dict>
 			<key>keypad+&apos;1&apos;</key>
 			<dict>
@@ -821,7 +862,7 @@
 			<key>deleteBackward:</key>
 			<dict>
 				<key>command</key>
-				<string>cancel_phrase_conversion</string>
+				<string>delete_character,confirm_without_accept</string>
 			</dict>
 			<key>tab</key>
 			<dict>
@@ -836,7 +877,7 @@
 			<key>moveDown:</key>
 			<dict>
 				<key>command</key>
-				<string>confirm</string>
+				<string>forward_prediction</string>
 			</dict>
 			<key>moveUp:</key>
 			<dict>
@@ -1465,25 +1506,30 @@
 		</dict>
 		<key>^incremental_search_filter</key>
 		<dict>
+			<key>insertNewline:</key>
+			<dict>
+				<key>command</key>
+				<string>incremental_search_return_key</string>
+			</dict>
 			<key>moveUp:</key>
 			<dict>
 				<key>command</key>
-				<string>none</string>
+				<string>incremental_search_up_arrow_key</string>
 			</dict>
 			<key>moveDown:</key>
 			<dict>
 				<key>command</key>
-				<string>none</string>
+				<string>incremental_search_down_arrow_key</string>
 			</dict>
 			<key>control+&apos;e&apos;</key>
 			<dict>
 				<key>command</key>
-				<string>none</string>
+				<string>incremental_search_up_arrow_key</string>
 			</dict>
 			<key>control+&apos;x&apos;</key>
 			<dict>
 				<key>command</key>
-				<string>none</string>
+				<string>incremental_search_down_arrow_key</string>
 			</dict>
 		</dict>
 		<key>^prediction_visibility_filter</key>
