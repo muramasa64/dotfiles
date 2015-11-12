@@ -2,7 +2,7 @@ set nocompatible
 
 set enc=utf-8
 set fenc=utf-8
-set fencs=utf-8,euc-jp,cp932,iso-2022-jp
+set fencs=utf-8,euc-jp,cp932,iso-2022-jp,ucs-bom,utf-16,utf-16le,utf-16be
 set ambiwidth=double
 
 set ignorecase
