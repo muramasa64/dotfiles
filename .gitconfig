@@ -28,3 +28,5 @@
 [branch "master"]
 	mergeoptions = --no-ff
 	rebase = true
+[rebase]
+	autostash = true
