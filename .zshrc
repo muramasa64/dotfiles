@@ -53,12 +53,6 @@ _awscli-homebrew-installed() {
   brew --prefix awscli &> /dev/null
 }
 
-if _homebrew-installed && _awscli-homebrew-installed ; then
-  source $(brew --prefix)/opt/awscli/libexec/bin/aws_zsh_completer.sh
-else
-  source `which aws_zsh_completer.sh` &> /dev/null
-fi
-
 # golang
 export GOPATH=~/go
 export PATH=$PATH:/$GOPATH/bin
