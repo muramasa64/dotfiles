@@ -11,6 +11,7 @@ dotfiles = [
   '.zshenv',
   '.zshrc',
   '.vim',
+  '.tmux.conf',
 ]
 
 dir = File.dirname(File.expand_path(__FILE__))
