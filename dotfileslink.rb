@@ -27,4 +27,5 @@ dotfiles.each do |f|
 end
 
 # install vim-plug
+`mkdir -pv ~/.vim/autoload/`
 `curl -fLo ~/.vim/autoload/plug.vim  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`
