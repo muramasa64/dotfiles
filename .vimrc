@@ -76,6 +76,9 @@ nmap # #zz
 nmap g* g*zz
 nmap g# g#zz
 
+" do nothing
+nnoremap Q <Nop>
+
 " edit binary file
 augroup BinaryXXD
   autocmd!
