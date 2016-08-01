@@ -30,13 +30,25 @@ alias gs='git status --short --branch'
 alias gst='git status --long'
 alias vi='vim'
 
+# 環境に合わせて出来るだけ好みのls出力にする
+if ls -N ~ >/dev/null 2>&1; then
+  # 最近の gnubin/ls が勝手にファイル名をクオート出力してくるのを抑止
+  alias ls='ls --color --time-style +%Y-%m-%d\ %H:%M:%S.%3N -N'
+elif ls --time-style +%Y-%m-%d\ %H:%M:%S.%3N ~ >/dev/null 2>&1; then
+  # デフォの時間表示は見難いのでISOぽくする(full-iso,long-iso,isoは帯に短し襷に長しなのでカスタム)
+  alias ls='ls --color --time-style +%Y-%m-%d\ %H:%M:%S.%3N'
+elif ls --color ~ >/dev/null 2>&1; then
+  # せめて色だけでも…
+  alias ls='ls --color'
+fi
+
 ########################################
 # OS 別の設定
 case ${OSTYPE} in
     darwin*)
         #Mac用の設定
         export CLICOLOR=1
-        alias ls='ls -G -F'
+        #alias ls='ls -G -F'
         alias vim='Vim'
         alias rm='rmtrash'
         ;;
