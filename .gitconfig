@@ -16,6 +16,7 @@
 	cv = commit -v
 	n = now --all --stat
 	b = branch
+	graph = log --graph --date-order -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --date=short
 [push]
 	default = simple
 [color]
@@ -30,3 +31,4 @@
 	rebase = true
 [rebase]
 	autostash = true
+
