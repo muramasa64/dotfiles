@@ -129,6 +129,8 @@ Plug 'bronson/vim-trailing-whitespace'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/vim-easy-align'
 Plug 'elixir-lang/vim-elixir'
+Plug 'fatih/vim-go'
+Plug 'nsf/gocode', {'rtp': 'vim/'}
 if has('lua')
   Plug 'Shougo/neocomplete.vim'
 endif
@@ -197,3 +199,14 @@ vnoremap <silent> <Enter> :EasyAlign<CR>
 
 " vim-markdown
 let g:vim_markdown_folding_disabled=1
+
+" vim-go
+let g:go_fmt_command = "goimports"
+set autowrite
+map <C-n> :cnext<CR>
+map <C-m> :cprevious<CR>
+nnoremap <leader>a :cclose<CR>
+
+" gocode
+set completeopt=menu,preview
+
