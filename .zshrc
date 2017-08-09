@@ -67,8 +67,7 @@ _awscli-homebrew-installed() {
 
 # golang
 export GOPATH=~/go
-export PATH=$PATH:/$GOPATH/bin
-
+export PATH=$PATH:/$GOPATH/bin:/usr/local/opt/go/libexec/bin
 
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
