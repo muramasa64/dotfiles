@@ -125,7 +125,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'altercation/vim-colors-solarized'
 Plug 'bronson/vim-trailing-whitespace'
-Plug 'airblade/vim-gitgutter'
+" Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/vim-easy-align'
 Plug 'elixir-lang/vim-elixir'
@@ -173,8 +173,8 @@ let g:solarized_termtrans = 1
 colorscheme solarized
 
 " vim-gitgutter
-nnoremap <silent> ,gg :<C-u>GitGutterToggle<CR>
-nnoremap <silent> ,gh :<C-u>GitGutterLineHighlightsToggle<CR>
+"nnoremap <silent> ,gg :<C-u>GitGutterToggle<CR>
+"nnoremap <silent> ,gh :<C-u>GitGutterLineHighlightsToggle<CR>
 
 " Easy align interactive
 vnoremap <silent> <Enter> :EasyAlign<CR>
