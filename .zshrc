@@ -83,3 +83,4 @@ fi
 
 # nodebrew
 export PATH=$HOME/.nodebrew/current/bin:$PATH
+export DYLD_LIBRARY_PATH=/usr/local/opt/cairo/lib
