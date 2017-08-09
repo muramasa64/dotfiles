@@ -131,6 +131,9 @@ Plug 'junegunn/vim-easy-align'
 Plug 'elixir-lang/vim-elixir'
 Plug 'fatih/vim-go'
 Plug 'nsf/gocode', {'rtp': 'vim/'}
+Plug 'rust-lang/rust.vim'
+Plug 'racer-rust/vim-racer'
+Plug 'cespare/vim-toml'
 if has('lua')
   Plug 'Shougo/neocomplete.vim'
 endif
@@ -209,4 +212,13 @@ nnoremap <leader>a :cclose<CR>
 
 " gocode
 set completeopt=menu,preview
+
+" rustfmt
+let g:rustfmt_command = '$HOME/.cargo/bin/rustfmt'
+let g:rustfmt_autosave = 1
+
+" vim-racer
+set hidden
+let g:racer_cmd = '$HOME/.cargo/bin/racer'
+let $RUST_SRC_PATH="/usr/local/src/rust-1.16.0/src"
 
