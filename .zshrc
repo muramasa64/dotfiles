@@ -87,3 +87,7 @@ export DYLD_LIBRARY_PATH=/usr/local/opt/cairo/lib
 
 # direnv
 eval "$(direnv hook zsh)"
+
+# rust
+source $HOME/.cargo/env
+eval $(/usr/libexec/path_helper -s)
