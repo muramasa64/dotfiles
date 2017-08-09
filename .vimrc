@@ -109,7 +109,7 @@ call plug#begin('~/.vim/plugged')
 "Plug 'Shougo/unite.vim'
 "Plug 'Shougo/neomru.vim'
 "Plug 'Shougo/neosnippet.vim'
-Plug 'scrooloose/syntastic.git'
+"Plug 'scrooloose/syntastic.git'
 "Plug 'kakkyz81/evervim.git'
 "Plug 'tyru/open-browser.vim'
 Plug 'plasticboy/vim-markdown'
