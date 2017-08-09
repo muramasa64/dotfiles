@@ -91,3 +91,6 @@ eval "$(direnv hook zsh)"
 # rust
 source $HOME/.cargo/env
 eval $(/usr/libexec/path_helper -s)
+
+# less
+export LESS='--no-init --RAW-CONTROL --LONG-PROMPT'
