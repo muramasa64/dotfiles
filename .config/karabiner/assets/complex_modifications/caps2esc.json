@@ -1,0 +1,26 @@
+{
+  "title": "CapsLock to ESC",
+  "rules": [
+    {
+      "description": "Change CapsLock to ESC",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "caps_lock",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "escape"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
