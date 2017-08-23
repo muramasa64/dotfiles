@@ -7,3 +7,4 @@
 fuel/app/config/isobe/*
 .vim/
 .vscode/extensions/
+.config/direnv/
