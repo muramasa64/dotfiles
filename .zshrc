@@ -69,6 +69,18 @@ _awscli-homebrew-installed() {
 export GOPATH=~/go
 export PATH=$PATH:$GOPATH/bin:/usr/local/opt/go/libexec/bin
 
+bindkey '^]' peco-src
+
+function peco-src() {
+	local src=$(ghq list --full-path|peco --query "$LBUFFER")
+	if [ -n "$src" ]; then
+		BUFFER="cd $src"
+		zle accept-line
+	fi
+	zle -R -c
+}
+zle -N peco-src
+
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
