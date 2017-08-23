@@ -32,3 +32,5 @@
 [rebase]
 	autostash = true
 
+[ghq]
+	root = /Users/kazuhiko/go/src
