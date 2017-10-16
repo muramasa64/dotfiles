@@ -134,6 +134,9 @@ Plug 'nsf/gocode', {'rtp': 'vim/'}
 Plug 'rust-lang/rust.vim'
 Plug 'racer-rust/vim-racer'
 Plug 'cespare/vim-toml'
+if has('python')
+  Plug 'davidhalter/jedi-vim'
+endif
 if has('lua')
   Plug 'Shougo/neocomplete.vim'
 endif
