@@ -136,6 +136,7 @@ Plug 'rust-lang/rust.vim', { 'for': ['rust'] }
 Plug 'racer-rust/vim-racer', { 'for': ['rust'] }
 Plug 'neomake/neomake'
 Plug 'cespare/vim-toml'
+Plug 'mindriot101/vim-yapf'
 Plug 'thinca/vim-quickrun', { 'for': ['rust'] }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
