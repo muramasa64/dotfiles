@@ -96,6 +96,9 @@ fi
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 export DYLD_LIBRARY_PATH=/usr/local/opt/cairo/lib
 
+# nodenv
+eval "$(nodenv init -)"
+
 # direnv
 eval "$(direnv hook zsh)"
 
