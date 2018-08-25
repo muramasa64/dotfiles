@@ -109,7 +109,7 @@ call plug#begin('~/.vim/plugged')
 "Plug 'Shougo/unite.vim'
 "Plug 'Shougo/neomru.vim'
 "Plug 'Shougo/neosnippet.vim'
-"Plug 'scrooloose/syntastic.git'
+Plug 'scrooloose/syntastic', { 'for': ['rust'] }
 "Plug 'kakkyz81/evervim.git'
 "Plug 'tyru/open-browser.vim'
 Plug 'plasticboy/vim-markdown'
@@ -131,9 +131,11 @@ Plug 'junegunn/vim-easy-align'
 Plug 'elixir-lang/vim-elixir'
 Plug 'fatih/vim-go'
 Plug 'nsf/gocode', {'rtp': 'vim/'}
-Plug 'rust-lang/rust.vim'
-Plug 'racer-rust/vim-racer'
+Plug 'rust-lang/rust.vim', { 'for': ['rust'] }
+Plug 'racer-rust/vim-racer', { 'for': ['rust'] }
+Plug 'neomake/neomake'
 Plug 'cespare/vim-toml'
+Plug 'thinca/vim-quickrun', { 'for': ['rust'] }
 if has('python')
   Plug 'davidhalter/jedi-vim'
 endif
