@@ -136,6 +136,8 @@ Plug 'racer-rust/vim-racer', { 'for': ['rust'] }
 Plug 'neomake/neomake'
 Plug 'cespare/vim-toml'
 Plug 'thinca/vim-quickrun', { 'for': ['rust'] }
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 if has('python')
   Plug 'davidhalter/jedi-vim'
 endif
@@ -221,9 +223,72 @@ set completeopt=menu,preview
 " rustfmt
 let g:rustfmt_command = '$HOME/.cargo/bin/rustfmt'
 let g:rustfmt_autosave = 1
+augroup NeomakeRustConfig
+  autocmd!
+  autocmd BufWritePost *.rs Neomake! clippy
+augroup END
 
 " vim-racer
 set hidden
 let g:racer_cmd = '$HOME/.cargo/bin/racer'
-let $RUST_SRC_PATH="/usr/local/src/rust-1.16.0/src"
+let g:racer_experimental_completer = 1
+let $RUST_SRC_PATH = '$HOME/.rustup/toolchains/nightly-x86_64-apple-darwin/lib/rustlib/src/rust/src'
+au FileType rust nmap gd <Plug>(rust-def)
+au FileType rust nmap gs <Plug>(rust-def-split)
+au FileType rust nmap gx <Plug>(rust-def-vertical)
+au FileType rust nmap <leader>gd <Plug>(rust-doc)
 
+" vim-yapf
+let g:yapf_style = "pep8"
+nnoremap <leader>y :call Yapf()<cr>
+
+" Powerline forts
+set laststatus=2
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#buffer_idx_mode = 1
+let g:airline#extensions#whitespace#mixed_indent_algo = 1
+let g:airline_theme = 'solarized'
+let g:airline_solarized_bg='dark'
+
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+
+" unicode symbols
+let g:airline_left_sep = '»'
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '«'
+let g:airline_right_sep = '◀'
+let g:airline_symbols.crypt = '🔒'
+let g:airline_symbols.linenr = '☰'
+let g:airline_symbols.linenr = '␊'
+let g:airline_symbols.linenr = '␤'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.maxlinenr = ''
+let g:airline_symbols.maxlinenr = '㏑'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.paste = 'Þ'
+let g:airline_symbols.paste = '∥'
+let g:airline_symbols.spell = 'Ꞩ'
+let g:airline_symbols.notexists = '∄'
+let g:airline_symbols.whitespace = 'Ξ'
+
+" powerline symbols
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = ''
+
+" old pewerline symbols
+" let g:airline_left_sep = '⮀'
+" let g:airline_left_alt_sep = '⮁'
+let g:airline_right_sep = '⮂'
+let g:airline_right_alt_sep = '⮃'
+" let g:airline_symbols.branch = '⭠'
+" let g:airline_symbols.readonly = '⭤'
+" let g:airline_symbols.linenr = '⭡'
