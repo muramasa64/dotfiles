@@ -86,7 +86,6 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 # pyenv
-
 PYENV_ROOT="${HOME}/.pyenv"
 if [ -d "${PYENV_ROOT}" ]; then
     export PATH=${PYENV_ROOT}/bin:$PATH
@@ -102,7 +101,6 @@ eval "$(direnv hook zsh)"
 
 # rust
 source $HOME/.cargo/env
-eval $(/usr/libexec/path_helper -s)
 
 # less
 export LESS='--no-init --RAW-CONTROL --LONG-PROMPT'
