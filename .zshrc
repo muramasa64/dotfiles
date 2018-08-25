@@ -107,3 +107,6 @@ source $HOME/.cargo/env
 
 # less
 export LESS='--no-init --RAW-CONTROL --LONG-PROMPT'
+
+# gcloud
+export PATH="$PATH:$HOME/google-cloud-sdk/bin"
