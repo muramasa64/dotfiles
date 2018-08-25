@@ -26,6 +26,32 @@
                     ]
                 }
             ]
+        },
+        {
+            "description": "Ctrl+H to Delete",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "j",
+                        "modifiers": {
+                            "mandatory": [
+                                "control"
+                            ],
+                            "optional": [
+                                "caps_lock",
+                                "shift",
+                                "option"
+                            ]
+                        }
+                    },
+                    "to": [
+                      {
+                          "key_code": "delete_or_backspace"
+                      }
+                    ]
+                }
+            ]
         }
     ]
 }
