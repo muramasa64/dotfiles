@@ -3,8 +3,9 @@ set lines=60
 set guioptions-=T
 
 set background=dark
-set gfn=Ricty\ Diminished\ Discord\ Regular\ for\ Powerline:h24
-set gfw=Ricty\ Diminished\ Discord\ Regular\ for\ Powerline:h24
+set gfn=Ricty\ Regular\ for\ Powerline:h24
+set gfw=Ricty\ Regular\ for\ Powerline:h24
+let g:PowerLine_symbols = 'fancy'
 set antialias
 
 highlight CursorIM guibg=Purple guifg=NONE
