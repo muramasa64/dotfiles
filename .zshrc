@@ -107,7 +107,7 @@ if [[ -x `which direnv &> /dev/null` ]]; then
 fi
 
 # rust
-if [[ -x `which cargo &> /dev/null` ]]; then
+if [ -d "$HOME/.cargo" ]; then
   source $HOME/.cargo/env
 fi
 
