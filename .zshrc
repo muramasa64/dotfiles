@@ -82,8 +82,10 @@ function peco-src() {
 zle -N peco-src
 
 # rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+if [[ -x `which rbenv &> /dev/null` ]]; then
+  export PATH="$HOME/.rbenv/bin:$PATH"
+  eval "$(rbenv init -)"
+fi
 
 # pyenv
 PYENV_ROOT="${HOME}/.pyenv"
@@ -93,17 +95,21 @@ if [ -d "${PYENV_ROOT}" ]; then
 fi
 
 # nodebrew
-export PATH=$HOME/.nodebrew/current/bin:$PATH
-export DYLD_LIBRARY_PATH=/usr/local/opt/cairo/lib
-
-# nodenv
-eval "$(nodenv init -)"
+if [[ -x `which rbenv &> /dev/null` ]]; then
+  export PATH=$HOME/.nodebrew/current/bin:$PATH
+  export DYLD_LIBRARY_PATH=/usr/local/opt/cairo/lib
+  eval "$(nodenv init -)"
+fi
 
 # direnv
-eval "$(direnv hook zsh)"
+if [[ -x `which direnv &> /dev/null` ]]; then
+  eval "$(direnv hook zsh)"
+fi
 
 # rust
-source $HOME/.cargo/env
+if [[ -x `which cargo &> /dev/null` ]]; then
+  source $HOME/.cargo/env
+fi
 
 # less
 export LESS='--no-init --RAW-CONTROL --LONG-PROMPT'
