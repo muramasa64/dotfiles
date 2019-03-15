@@ -7,7 +7,6 @@
 [core]
 	precomposeunicode = true
 	quotepath = false
-	excludesfile = ~/.gitignore
 	editor = vim -c \"set fenc=utf-8\"
 [alias]
 	st = status --branch --short

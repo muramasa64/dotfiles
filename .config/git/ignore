@@ -1,0 +1,13 @@
+.DS_Store
+~$*.xls[x]
+*.swp
+.*.un~
+*~
+/vendor/bundle/
+fuel/app/config/isobe/*
+.vim/
+.vscode/extensions/
+.config/direnv/
+.config/gcloud/
+*-py-venv/*
+.envrc
