@@ -20,8 +20,8 @@
 [push]
 	default = simple
 [color]
-	ui = always
-[coler "diff-highlight"]
+	ui = auto
+[color "diff-highlight"]
 	oldNormal = red bold
 	oldHighlight = red bold 52
 	newNormal = green bold
