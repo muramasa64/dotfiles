@@ -20,7 +20,7 @@
 [push]
 	default = simple
 [color]
-	ui = auto
+	ui = always
 [merge]
 	defaultToUpstream = true
 	ff = false
