@@ -8,6 +8,7 @@
 	precomposeunicode = true
 	quotepath = false
 	editor = vim -c \"set fenc=utf-8\"
+	pager = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight|less
 [alias]
 	st = status --branch --short
 	l = log --decorate --stat --patch
