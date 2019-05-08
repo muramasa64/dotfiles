@@ -7,4 +7,4 @@
     { "key": "cmd+-",               "command": "editor.action.fontZoomOut", "when": "editorTextForcus" },
     { "key": "cmd+numpad0",         "command": "editor.action.fontZoomReset" },
     { "key": "cmd+0",               "command": "editor.action.fontZoomReset" },
-]
+] 

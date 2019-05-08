@@ -1,5 +1,4 @@
 {
-    "workbench.settings.editor": "json",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.fontAliasing": "default",
     "breadcrumbs.enabled": true,
@@ -7,7 +6,6 @@
     "editor.fontSize": 14,
     "editor.lineHeight": 0,
     "editor.letterSpacing": 0,
-    "terminal.explorerKind": "external",
-    "terminal.external.osxExec": "iTerm.app",
-    "window.zoomLevel": 1
+    "window.zoomLevel": 1,
+    "workbench.colorTheme": "Solarized Dark"
 }
