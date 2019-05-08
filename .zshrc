@@ -104,7 +104,7 @@ if [[ -x `which rbenv &> /dev/null` ]]; then
 fi
 
 # direnv
-if [[ -x `which direnv &> /dev/null` ]]; then
+if which direnv > /dev/null 2>&1 ; then
   eval "$(direnv hook zsh)"
 fi
 
