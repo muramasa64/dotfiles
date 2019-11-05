@@ -25,6 +25,9 @@
     "elm.makeCommand": "/Users/isobe/.nodebrew/current/bin/elm",
     "elm.formatCommand": "/Users/isobe/.nodebrew/current/bin/elm-formatelm-format",
     "terminal.integrated.shell.osx": "/bin/zsh",
+    "files.exclude": {
+        "**/.*.un~": true
+    },
     "editor.renderWhitespace": "boundary",
     "editor.tabCompletion": "on",
     "editor.wordWrap": "on"
