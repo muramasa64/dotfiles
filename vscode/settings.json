@@ -16,6 +16,14 @@
     },
     "markdown-pdf.scale": 0.8,
     "editor.formatOnSave": true,
+    "[elm]": {
+        "editor.formatOnSave": true
+    },
+    "elm.analyseEnabled": true,
+    "elm.analyseCommand": "/Users/isobe/.nodebrew/current/bin/elm-analyse",
+    "elm.compiler": "/Users/isobe/.nodebrew/current/bin/elm",
+    "elm.makeCommand": "/Users/isobe/.nodebrew/current/bin/elm",
+    "elm.formatCommand": "/Users/isobe/.nodebrew/current/bin/elm-formatelm-format",
     "editor.renderWhitespace": "boundary",
     "editor.tabCompletion": "on",
     "editor.wordWrap": "on"
