@@ -8,9 +8,15 @@
     "editor.letterSpacing": 0,
     "window.zoomLevel": 1,
     "workbench.colorTheme": "Solarized Dark",
+    "explorer.confirmDelete": false,
+    "editor.fontLigatures": true,
     "markdownlint.run": "onSave",
     "markdownlint.config": {
         "MD033": false
     },
-    "markdown-pdf.scale": 0.8
+    "markdown-pdf.scale": 0.8,
+    "editor.formatOnSave": true,
+    "editor.renderWhitespace": "boundary",
+    "editor.tabCompletion": "on",
+    "editor.wordWrap": "on"
 }
