@@ -92,14 +92,16 @@ fi
 # pyenv
 PYENV_ROOT="${HOME}/.pyenv"
 if [ -d "${PYENV_ROOT}" ]; then
-    export PATH=${PYENV_ROOT}/bin:$PATH
-    eval "$(pyenv init -)"
+  export PATH=${PYENV_ROOT}/bin:$PATH
+  eval "$(pyenv init -)"
 fi
 
 # nodebrew
-if [[ -x `which rbenv &> /dev/null` ]]; then
-  export PATH=$HOME/.nodebrew/current/bin:$PATH
-  export DYLD_LIBRARY_PATH=/usr/local/opt/cairo/lib
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+export DYLD_LIBRARY_PATH=/usr/local/opt/cairo/lib
+
+# nodenv
+if [[ -x `which nodeenv &> /dev/null` ]]; then
   eval "$(nodenv init -)"
 fi
 
