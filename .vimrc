@@ -113,6 +113,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/syntastic', { 'for': ['rust'] }
 "Plug 'kakkyz81/evervim.git'
 "Plug 'tyru/open-browser.vim'
+Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'kannokanno/previm'
 "Plug 'vim-scripts/vim-auto-save'
