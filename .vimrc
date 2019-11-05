@@ -61,6 +61,7 @@ autocmd BufNewFile,BufRead app/**/*.yml set ft=ruby fenc=utf-8
 autocmd FileType c hi Comment ctermfg=darkcyan
 autocmd FileType cpp hi Comment ctermfg=darkcyan
 autocmd FileType php set tabstop=4 sts=4 tw=0 sw=4 expandtab
+autocmd FileType markdown set tabstop=2 sts=2 tw=0 sw=2 expandtab
 
 " rubycomplete.vim
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
@@ -262,7 +263,8 @@ vnoremap <silent> <Enter> :EasyAlign<CR>
 "nnoremap <silent> <F7> :PrevimOpen<CR>
 
 " vim-markdown
-let g:vim_markdown_folding_disabled=1
+let g:vim_markdown_folding_disabled = 1
+let g:vim_markdown_new_list_item_indent = 2
 
 " vim-go
 let g:go_fmt_command = "goimports"
