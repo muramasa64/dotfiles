@@ -120,3 +120,6 @@ export LESS='--no-init --RAW-CONTROL --LONG-PROMPT'
 
 # gcloud
 export PATH="$PATH:$HOME/google-cloud-sdk/bin"
+
+# gcc
+export PATH="/usr/local/opt/avr-gcc@7/bin:$PATH"
