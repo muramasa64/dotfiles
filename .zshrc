@@ -123,3 +123,6 @@ export PATH="$PATH:$HOME/google-cloud-sdk/bin"
 
 # gcc
 export PATH="/usr/local/opt/avr-gcc@7/bin:$PATH"
+
+# dotnet
+export PATH="$PATH:/usr/local/share/dotnet:$HOME/.dotnet/tools"
