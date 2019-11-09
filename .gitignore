@@ -7,11 +7,12 @@
 fuel/app/config/isobe/*
 .vim/
 .vscode
-.config/karabiner/karabiner.json
-.config/karabiner/automatic_backups/
+.config/karabiner/
 .config/direnv/
 .config/gcloud/
 .config/configstore/
+.config/NuGet/
+.config/anyenv/
 *-py-venv/*
 .envrc
 terraform.tfstate*
