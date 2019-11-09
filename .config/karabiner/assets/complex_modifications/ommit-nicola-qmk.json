@@ -1,0 +1,1310 @@
+{
+    "title": "Ommit-Nicola-QMK keymap",
+    "rules": [
+        {
+            "description": "Ommit-Nicola-QMK keymap for Qwerty keyboard to Dvorak layout",
+            "manipulators": [
+                {
+                    "description": "Left thumb + a = 'を'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "a" } ] },
+                    "to": [ { "key_code": "comma" }, { "key_code": "s" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + s = 'あ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "s" } ] },
+                    "to": [ { "key_code": "a" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + d = 'な'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "d" } ] },
+                    "to": [ { "key_code": "l" }, { "key_code": "a" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + f = 'ゅ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "f" } ] },
+                    "to": [ { "key_code": "b" }, { "key_code": "t" }, { "key_code": "f" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + g = 'も'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "g" } ] },
+                    "to": [ { "key_code": "m" }, { "key_code": "s" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + a = 'ゔ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "a" } ] },
+                    "to": [ { "key_code": "period" }, { "key_code": "f" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + s = 'じ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "s" } ] },
+                    "to": [ { "key_code": "slash" }, { "key_code": "g" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + d = 'で'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "d" } ] },
+                    "to": [ { "key_code": "h" }, { "key_code": "d" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + f = 'げ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "f" } ] },
+                    "to": [ { "key_code": "u" }, { "key_code": "d" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + g = 'ぜ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "g" } ] },
+                    "to": [ { "key_code": "slash" }, { "key_code": "d" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "a = 'う'",
+                    "type": "basic",
+                    "from": { "key_code": "a" },
+                    "to": [ { "key_code": "f" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "s = 'し'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "s" } ] },
+                    "to": [ { "key_code": "semicolon" }, { "key_code": "g" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "d = 'て'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "d" } ] },
+                    "to": [ { "key_code": "k" }, { "key_code": "d" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "f = 'け'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "f" } ] },
+                    "to": [ { "key_code": "v" }, { "key_code": "d" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "g = 'せ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "g" } ] },
+                    "to": [ { "key_code": "semicolon" }, { "key_code": "d" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + q = 'ぁ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "q" } ] },
+                    "to": [ { "key_code": "b" }, { "key_code": "a" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + w = 'え'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "w" } ] },
+                    "to": [ { "key_code": "d" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + e = 'り'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "e" } ] },
+                    "to": [ { "key_code": "o" }, { "key_code": "g" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + r = 'ゃ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "r" } ] },
+                    "to": [ { "key_code": "b" }, { "key_code": "t" }, { "key_code": "a" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + t = 'れ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "t" } ] },
+                    "to": [ { "key_code": "o" }, { "key_code": "d" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + w = 'が'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "w" } ] },
+                    "to": [ { "key_code": "u" }, { "key_code": "a" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + e = 'だ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "e" } ] },
+                    "to": [ { "key_code": "h" }, { "key_code": "a" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + r = 'ご'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "r" } ] },
+                    "to": [ { "key_code": "u" }, { "key_code": "s" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + t = 'ざ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "t" } ] },
+                    "to": [ { "key_code": "slash" }, { "key_code": "a" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "q = '。'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "q" } ] },
+                    "to": [ { "key_code": "e" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "w = 'か'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "w" } ] },
+                    "to": [ { "key_code": "v" }, { "key_code": "a" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "e = 'た'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "e" } ] },
+                    "to": [ { "key_code": "k" }, { "key_code": "a" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "r = 'こ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "r" } ] },
+                    "to": [ { "key_code": "v" }, { "key_code": "s" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "t = 'さ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "t" } ] },
+                    "to": [ { "key_code": "semicolon" }, { "key_code": "a" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + z = 'ぅ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "z" } ] },
+                    "to": [ { "key_code": "b" }, { "key_code": "f" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + x = 'ー'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "x" } ] },
+                        "to": [ { "key_code": "hyphen" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + c = 'ろ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "c" } ] },
+                    "to": [ { "key_code": "o" }, { "key_code": "s" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + v = 'や'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "v" } ] },
+                    "to": [ { "key_code": "t" }, { "key_code": "a" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + b = 'ぃ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "b" } ] },
+                    "to": [ { "key_code": "b" }, { "key_code": "g" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + x = 'び'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "x" } ] },
+                    "to": [ { "key_code": "n" }, { "key_code": "g" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + c = 'ず'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "c" } ] },
+                    "to": [ { "key_code": "slash" }, { "key_code": "f" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + v = 'ぶ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "v" } ] },
+                    "to": [ { "key_code": "n" }, { "key_code": "f" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + b = 'べ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "b" } ] },
+                    "to": [ { "key_code": "n" }, { "key_code": "d" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "z = '．'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "z" } ] },
+                    "to": [ { "key_code": "e", "modifiers": "left_option" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "x = 'ひ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "x" } ] },
+                    "to": [ { "key_code": "j" }, { "key_code": "g" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "c = 'す'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "c" } ] },
+                    "to": [ { "key_code": "semicolon" }, { "key_code": "f" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "v = 'ふ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "v" } ] },
+                    "to": [ { "key_code": "j" }, { "key_code": "f" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "b = 'へ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "b" } ] },
+                    "to": [ { "key_code": "j" }, { "key_code": "d" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + h = 'み'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "h" } ] },
+                    "to": [ { "key_code": "m" }, { "key_code": "g" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + j = 'お'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "j" } ] },
+                    "to": [ { "key_code": "s" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + k = 'の'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "k" } ] },
+                    "to": [ { "key_code": "l" }, { "key_code": "s" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + l = 'ょ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "l" } ] },
+                    "to": [ { "key_code": "b" }, { "key_code": "t" }, { "key_code": "s" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + ; = 'っ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "semicolon" } ] },
+                    "to": [ { "key_code": "b" }, { "key_code": "k" }, { "key_code": "f" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + h = 'ば'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "h" } ] },
+                    "to": [ { "key_code": "n" }, { "key_code": "a" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + j = 'ど'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "j" } ] },
+                    "to": [ { "key_code": "h" }, { "key_code": "s" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + k = 'ぎ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "k" } ] },
+                    "to": [ { "key_code": "u" }, { "key_code": "g" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + l = 'ぽ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "l" } ] },
+                    "to": [ { "key_code": "r" }, { "key_code": "s" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "h = 'は'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "h" } ] },
+                    "to": [ { "key_code": "j" }, { "key_code": "a" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "j = 'と'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "j" } ] },
+                    "to": [ { "key_code": "k" }, { "key_code": "s" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "k = 'き'",
+                    "type": "basic",
+                    "from": {
+                        "simultaneous": [ { "key_code": "k" } ],
+                        "modifiers": { "optional": ["any"] }
+                    },
+                    "to": [ { "key_code": "v" }, { "key_code": "g" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "l = 'い'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "l" } ] },
+                    "to": [ { "key_code": "g" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "; = 'ん'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "semicolon" } ] },
+                    "to": [ { "key_code": "l" }, { "key_code": "l" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + y = 'よ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "y" } ] },
+                    "to": [ { "key_code": "t" }, { "key_code": "s" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + u = 'に'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "u" } ] },
+                    "to": [ { "key_code": "l" }, { "key_code": "g" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + i = 'る'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "i" } ] },
+                    "to": [ { "key_code": "o" }, { "key_code": "f" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + o = 'ま'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "o" } ] },
+                    "to": [ { "key_code": "m" }, { "key_code": "a" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + p = 'ぇ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "p" } ] },
+                    "to": [ { "key_code": "b" }, { "key_code": "d" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + y = 'ぱ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "y" } ] },
+                    "to": [ { "key_code": "r" }, { "key_code": "a" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + u = 'ぢ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "u" } ] },
+                    "to": [ { "key_code": "h" }, { "key_code": "g" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + i = 'ぐ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "i" } ] },
+                    "to": [ { "key_code": "u" }, { "key_code": "f" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + o = 'づ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "o" } ] },
+                    "to": [ { "key_code": "h" }, { "key_code": "f" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + p = 'ぴ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "p" } ] },
+                    "to": [ { "key_code": "r" }, { "key_code": "g" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "y = 'ら'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "y" } ] },
+                    "to": [ { "key_code": "o" }, { "key_code": "a" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "u = 'ち'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "u" } ] },
+                    "to": [ { "key_code": "k" }, { "key_code": "g" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "i = 'く'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "i" } ] },
+                    "to": [ { "key_code": "v" }, { "key_code": "f" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "o = 'つ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "o" } ] },
+                    "to": [ { "key_code": "k" }, { "key_code": "f" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "p = '、'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "p" } ] },
+                    "to": [ { "key_code": "w" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + n = 'ぬ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "n" } ] },
+                    "to": [ { "key_code": "l" }, { "key_code": "f" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + m = 'ゆ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "m" } ] },
+                    "to": [ { "key_code": "t" }, { "key_code": "f" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + , = 'む'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "comma" } ] },
+                    "to": [ { "key_code": "m" }, { "key_code": "f" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + . = 'わ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "period" } ] },
+                    "to": [ { "key_code": "comma" }, { "key_code": "a" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + / = 'ぉ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "slash" } ] },
+                    "to": [ { "key_code": "b" }, { "key_code": "s" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + n = 'ぷ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "n" } ] },
+                    "to": [ { "key_code": "r" }, { "key_code": "f" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + m = 'ぞ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "m" } ] },
+                    "to": [ { "key_code": "slash" }, { "key_code": "s" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + , = 'ぺ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "comma" } ] },
+                    "to": [ { "key_code": "r" }, { "key_code": "d" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + . = 'ぼ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "period" } ] },
+                    "to": [ { "key_code": "n" }, { "key_code": "s" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "n = 'め'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "n" } ] },
+                    "to": [ { "key_code": "m" }, { "key_code": "d" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "m = 'そ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "m" } ] },
+                    "to": [ { "key_code": "semicolon" }, { "key_code": "s" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": ", = 'ね'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "comma" } ] },
+                    "to": [ { "key_code": "l" }, { "key_code": "d" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": ". = 'ほ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "period" } ] },
+                    "to": [ { "key_code": "j" }, { "key_code": "s" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "/ = '・'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "slash" } ] },
+                    "to": [ { "key_code": "open_bracket" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb shift single * 2",
+                    "type": "basic",
+                    "from": { "key_code": "lang8" },
+                    "to": [ { "key_code": "lang8" } ],
+                    "conditions": [ { "type": "variable_if", "name": "lang8-single", "value": 1 } ]
+                },
+                {
+                    "description": "Left thumb shift: single * 1 = lang2",
+                    "type": "basic",
+                    "parameters": { "to_delayed_action_delay_milliseconds": "300" },
+                    "from": { "key_code": "lang8" },
+                    "to": [ { "key_code": "lang8" } ],
+                    "to_if_alone": [
+                        { "key_code": "lang2" },
+                        { "set_variable": { "name": "lang8-single", "value": 1 } }
+                    ],
+                    "to_delayed_action": {
+                        "to_if_invoked": [ { "set_variable": { "name": "lang8-single", "value": 0 } } ],
+                        "to_if_canceled": [ { "set_variable": { "name": "lang8-single", "value": 0 } } ]
+                    }
+                },
+                {
+                    "description": "Right thumb shift single * 2",
+                    "type": "basic",
+                    "from": { "key_code": "lang9" },
+                    "to": [ { "key_code": "lang9" } ],
+                    "conditions": [ { "type": "variable_if", "name": "lang9-single", "value": 1 } ]
+                },
+                {
+                    "description": "Right thumb shift: single * 1 = lang1",
+                    "type": "basic",
+                    "parameters": { "to_delayed_action_delay_milliseconds": "300" },
+                    "from": { "key_code": "lang9" },
+                    "to": [ { "key_code": "lang9" } ],
+                    "to_if_alone": [
+                        { "key_code": "lang1" },
+                        { "set_variable": { "name": "lang9-single", "value": 1 } }
+                    ],
+                    "to_delayed_action": {
+                        "to_if_invoked": [ { "set_variable": { "name": "lang9-single", "value": 0 } } ],
+                        "to_if_canceled": [ { "set_variable": { "name": "lang9-single", "value": 0 } } ]
+                    }
+                }
+            ]
+        },
+        {
+            "description": "Ommit-Nicola-QMK keymap for Dovark keyboard",
+            "manipulators": [
+                {
+                    "description": "Left thumb + a = 'を'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "a" } ] },
+                    "to": [ { "key_code": "w" }, { "key_code": "o" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + o = 'あ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "o" } ] },
+                    "to": [ { "key_code": "a" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + e = 'な'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "e" } ] },
+                    "to": [ { "key_code": "n" }, { "key_code": "a" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + u = 'ゅ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "u" } ] },
+                    "to": [ { "key_code": "x" }, { "key_code": "y" }, { "key_code": "u" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + i = 'も'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "i" } ] },
+                    "to": [ { "key_code": "m" }, { "key_code": "o" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + a = 'ゔ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "a" } ] },
+                    "to": [ { "key_code": "v" }, { "key_code": "u" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + o = 'じ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "o" } ] },
+                    "to": [ { "key_code": "z" }, { "key_code": "i" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + e = 'で'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "e" } ] },
+                    "to": [ { "key_code": "d" }, { "key_code": "e" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + u = 'げ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "u" } ] },
+                    "to": [ { "key_code": "g" }, { "key_code": "e" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + i = 'ぜ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "i" } ] },
+                    "to": [ { "key_code": "z" }, { "key_code": "e" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "a = 'う'",
+                    "type": "basic",
+                    "from": { "key_code": "a" },
+                    "to": [ { "key_code": "u" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "o = 'し'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "o" } ] },
+                    "to": [ { "key_code": "s" }, { "key_code": "i" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "e = 'て'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "e" } ] },
+                    "to": [ { "key_code": "t" }, { "key_code": "e" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "u = 'け'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "u" } ] },
+                    "to": [ { "key_code": "k" }, { "key_code": "e" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "i = 'せ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "i" } ] },
+                    "to": [ { "key_code": "s" }, { "key_code": "e" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + ' = 'ぁ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "quote" } ] },
+                    "to": [ { "key_code": "x" }, { "key_code": "a" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + , = 'え'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "comma" } ] },
+                    "to": [ { "key_code": "e" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + . = 'り'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "period" } ] },
+                    "to": [ { "key_code": "r" }, { "key_code": "i" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + p = 'ゃ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "p" } ] },
+                    "to": [ { "key_code": "x" }, { "key_code": "y" }, { "key_code": "a" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + y = 'れ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "y" } ] },
+                    "to": [ { "key_code": "r" }, { "key_code": "e" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + , = 'が'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "comma" } ] },
+                    "to": [ { "key_code": "g" }, { "key_code": "a" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + . = 'だ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "period" } ] },
+                    "to": [ { "key_code": "d" }, { "key_code": "a" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + p = 'ご'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "p" } ] },
+                    "to": [ { "key_code": "g" }, { "key_code": "o" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + y = 'ざ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "y" } ] },
+                    "to": [ { "key_code": "z" }, { "key_code": "a" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "' = '。'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "quote" } ] },
+                    "to": [ { "key_code": "period" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": ", = 'か'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "comma" } ] },
+                    "to": [ { "key_code": "k" }, { "key_code": "a" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": ". = 'た'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "period" } ] },
+                    "to": [ { "key_code": "t" }, { "key_code": "a" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "p = 'こ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "p" } ] },
+                    "to": [ { "key_code": "k" }, { "key_code": "o" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "y = 'さ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "y" } ] },
+                    "to": [ { "key_code": "s" }, { "key_code": "a" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + ; = 'ぅ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "semicolon" } ] },
+                    "to": [ { "key_code": "x" }, { "key_code": "u" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + q = 'ー'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "q" } ] },
+                        "to": [ { "key_code": "hyphen" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + j = 'ろ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "j" } ] },
+                    "to": [ { "key_code": "r" }, { "key_code": "o" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + k = 'や'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "k" } ] },
+                    "to": [ { "key_code": "y" }, { "key_code": "a" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + x = 'ぃ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "x" } ] },
+                    "to": [ { "key_code": "x" }, { "key_code": "i" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + q = 'び'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "q" } ] },
+                    "to": [ { "key_code": "b" }, { "key_code": "i" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + j = 'ず'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "j" } ] },
+                    "to": [ { "key_code": "z" }, { "key_code": "u" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + k = 'ぶ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "k" } ] },
+                    "to": [ { "key_code": "b" }, { "key_code": "u" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + x = 'べ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "x" } ] },
+                    "to": [ { "key_code": "b" }, { "key_code": "e" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "; = '．'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "semicolon" } ] },
+                    "to": [ { "key_code": "period", "modifiers": "left_option" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "q = 'ひ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "q" } ] },
+                    "to": [ { "key_code": "h" }, { "key_code": "i" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "j = 'す'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "j" } ] },
+                    "to": [ { "key_code": "s" }, { "key_code": "u" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "k = 'ふ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "k" } ] },
+                    "to": [ { "key_code": "h" }, { "key_code": "u" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "x = 'へ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "x" } ] },
+                    "to": [ { "key_code": "h" }, { "key_code": "e" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + d = 'み'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "d" } ] },
+                    "to": [ { "key_code": "m" }, { "key_code": "i" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + h = 'お'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "h" } ] },
+                    "to": [ { "key_code": "o" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + t = 'の'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "t" } ] },
+                    "to": [ { "key_code": "n" }, { "key_code": "o" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + n = 'ょ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "n" } ] },
+                    "to": [ { "key_code": "x" }, { "key_code": "y" }, { "key_code": "o" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + s = 'っ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "s" } ] },
+                    "to": [ { "key_code": "x" }, { "key_code": "t" }, { "key_code": "u" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + d = 'ば'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "d" } ] },
+                    "to": [ { "key_code": "b" }, { "key_code": "a" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + h = 'ど'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "h" } ] },
+                    "to": [ { "key_code": "d" }, { "key_code": "o" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + t = 'ぎ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "t" } ] },
+                    "to": [ { "key_code": "g" }, { "key_code": "i" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + n = 'ぽ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "n" } ] },
+                    "to": [ { "key_code": "p" }, { "key_code": "o" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "d = 'は'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "d" } ] },
+                    "to": [ { "key_code": "h" }, { "key_code": "a" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "h = 'と'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "h" } ] },
+                    "to": [ { "key_code": "t" }, { "key_code": "o" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "t = 'き'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "t" } ], "modifiers": { "optional": ["any"] } },
+                    "to": [ { "key_code": "k" }, { "key_code": "i" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "n = 'い'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "n" } ] },
+                    "to": [ { "key_code": "i" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "s = 'ん'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "s" } ] },
+                    "to": [ { "key_code": "n" }, { "key_code": "n" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + f = 'よ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "f" } ] },
+                    "to": [ { "key_code": "y" }, { "key_code": "o" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + g = 'に'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "g" } ] },
+                    "to": [ { "key_code": "n" }, { "key_code": "i" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + c = 'る'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "c" } ] },
+                    "to": [ { "key_code": "r" }, { "key_code": "u" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + r = 'ま'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "r" } ] },
+                    "to": [ { "key_code": "m" }, { "key_code": "a" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + l = 'ぇ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "l" } ] },
+                    "to": [ { "key_code": "x" }, { "key_code": "e" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + f = 'ぱ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "f" } ] },
+                    "to": [ { "key_code": "p" }, { "key_code": "a" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + g = 'ぢ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "g" } ] },
+                    "to": [ { "key_code": "d" }, { "key_code": "i" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + c = 'ぐ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "c" } ] },
+                    "to": [ { "key_code": "g" }, { "key_code": "u" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + r = 'づ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "r" } ] },
+                    "to": [ { "key_code": "d" }, { "key_code": "u" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + l = 'ぴ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "l" } ] },
+                    "to": [ { "key_code": "p" }, { "key_code": "i" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "f = 'ら'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "f" } ] },
+                    "to": [ { "key_code": "r" }, { "key_code": "a" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "g = 'ち'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "g" } ] },
+                    "to": [ { "key_code": "t" }, { "key_code": "i" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "c = 'く'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "c" } ] },
+                    "to": [ { "key_code": "k" }, { "key_code": "u" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "r = 'つ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "r" } ] },
+                    "to": [ { "key_code": "t" }, { "key_code": "u" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "l = '、'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "l" } ] },
+                    "to": [ { "key_code": "comma" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + b = 'ぬ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "b" } ] },
+                    "to": [ { "key_code": "n" }, { "key_code": "u" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + m = 'ゆ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "m" } ] },
+                    "to": [ { "key_code": "y" }, { "key_code": "u" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + w = 'む'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "w" } ] },
+                    "to": [ { "key_code": "m" }, { "key_code": "u" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + v = 'わ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "v" } ] },
+                    "to": [ { "key_code": "w" }, { "key_code": "a" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Right thumb + z = 'ぉ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang9" }, { "key_code": "z" } ] },
+                    "to": [ { "key_code": "x" }, { "key_code": "o" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + b = 'ぷ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "b" } ] },
+                    "to": [ { "key_code": "p" }, { "key_code": "u" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + m = 'ぞ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "m" } ] },
+                    "to": [ { "key_code": "z" }, { "key_code": "o" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + w = 'ぺ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "w" } ] },
+                    "to": [ { "key_code": "p" }, { "key_code": "e" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb + v = 'ぼ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "lang8" }, { "key_code": "v" } ] },
+                    "to": [ { "key_code": "b" }, { "key_code": "o" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "b = 'め'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "b" } ] },
+                    "to": [ { "key_code": "m" }, { "key_code": "e" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "m = 'そ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "m" } ] },
+                    "to": [ { "key_code": "s" }, { "key_code": "o" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "w = 'ね'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "w" } ] },
+                    "to": [ { "key_code": "n" }, { "key_code": "e" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "v = 'ほ'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "v" } ] },
+                    "to": [ { "key_code": "h" }, { "key_code": "o" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "z = '・'",
+                    "type": "basic",
+                    "from": { "simultaneous": [ { "key_code": "z" } ] },
+                    "to": [ { "key_code": "slash" } ],
+                    "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ja" } ] } ]
+                },
+                {
+                    "description": "Left thumb shift single * 2",
+                    "type": "basic",
+                    "from": { "key_code": "lang8" },
+                    "to": [ { "key_code": "lang8" } ],
+                    "conditions": [ { "type": "variable_if", "name": "lang8-single", "value": 1 } ]
+                },
+                {
+                    "description": "Left thumb shift: single * 1 = lang2",
+                    "type": "basic",
+                    "parameters": { "to_delayed_action_delay_milliseconds": "300" },
+                    "from": { "key_code": "lang8" },
+                    "to": [ { "key_code": "lang8" } ],
+                    "to_if_alone": [
+                        { "key_code": "lang2" },
+                        { "set_variable": { "name": "lang8-single", "value": 1 } }
+                    ],
+                    "to_delayed_action": {
+                        "to_if_invoked": [ { "set_variable": { "name": "lang8-single", "value": 0 } } ],
+                        "to_if_canceled": [ { "set_variable": { "name": "lang8-single", "value": 0 } } ]
+                    }
+                },
+                {
+                    "description": "Right thumb shift single * 2",
+                    "type": "basic",
+                    "from": { "key_code": "lang9" },
+                    "to": [ { "key_code": "lang9" } ],
+                    "conditions": [ { "type": "variable_if", "name": "lang9-single", "value": 1 } ]
+                },
+                {
+                    "description": "Right thumb shift: single * 1 = lang1",
+                    "type": "basic",
+                    "parameters": { "to_delayed_action_delay_milliseconds": "300" },
+                    "from": { "key_code": "lang9" },
+                    "to": [ { "key_code": "lang9" } ],
+                    "to_if_alone": [
+                        { "key_code": "lang1" },
+                        { "set_variable": { "name": "lang9-single", "value": 1 } }
+                    ],
+                    "to_delayed_action": {
+                        "to_if_invoked": [ { "set_variable": { "name": "lang9-single", "value": 0 } } ],
+                        "to_if_canceled": [ { "set_variable": { "name": "lang9-single", "value": 0 } } ]
+                    }
+                }
+            ]
+        }
+    ]
+}
