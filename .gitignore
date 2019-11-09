@@ -10,6 +10,7 @@ fuel/app/config/isobe/*
 .config/karabiner/karabiner.json
 .config/direnv/
 .config/gcloud/
+.config/configstore/
 *-py-venv/*
 .envrc
 terraform.tfstate*
