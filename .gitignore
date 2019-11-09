@@ -8,6 +8,7 @@ fuel/app/config/isobe/*
 .vim/
 .vscode
 .config/karabiner/karabiner.json
+.config/karabiner/automatic_backups/
 .config/direnv/
 .config/gcloud/
 .config/configstore/
