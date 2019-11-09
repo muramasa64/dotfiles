@@ -42,6 +42,10 @@ elif ls --color ~ >/dev/null 2>&1; then
   alias ls='ls --color'
 fi
 
+if [[ -x `which exa &> /dev/null` ]]; then
+  alias ls='exa --time-style=long-iso'
+fi
+
 ########################################
 # OS 別の設定
 case ${OSTYPE} in
