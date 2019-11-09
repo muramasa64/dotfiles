@@ -12,3 +12,6 @@ fuel/app/config/isobe/*
 .config/gcloud/
 *-py-venv/*
 .envrc
+terraform.tfstate*
+.terraform
+*.tsvars
