@@ -145,6 +145,7 @@ Plug 'elmcast/elm-vim'
 Plug 'thinca/vim-quickrun', { 'for': ['rust'] }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'leafgarland/typescript-vim'
 Plug 'hashivim/vim-terraform'
 Plug 'juliosueiras/vim-terraform-completion'
 if has('python')
