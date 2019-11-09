@@ -69,6 +69,9 @@ _awscli-homebrew-installed() {
   brew --prefix awscli &> /dev/null
 }
 
+####################
+export PATH=$PATH:~/bin
+
 # golang
 if [ -d "/usr/local/go" ]; then
   export GOPATH=~/go
