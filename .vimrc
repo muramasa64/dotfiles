@@ -145,6 +145,8 @@ Plug 'elmcast/elm-vim'
 Plug 'thinca/vim-quickrun', { 'for': ['rust'] }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'hashivim/vim-terraform'
+Plug 'juliosueiras/vim-terraform-completion'
 if has('python')
   Plug 'davidhalter/jedi-vim'
 endif
@@ -300,3 +302,14 @@ au FileType rust nmap <leader>gd <Plug>(rust-doc)
 " vim-yapf
 let g:yapf_style = "pep8"
 nnoremap <leader>y :call Yapf()<cr>
+
+" hashvim/terraform-vim
+let g:terraform_align=1
+let g:terraform_fmt_on_save = 1
+
+" Minimal Configuration for juliosueiras/vim-terraform-completion
+" Syntastic Config
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
