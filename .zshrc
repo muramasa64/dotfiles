@@ -90,27 +90,9 @@ function peco-src() {
 }
 zle -N peco-src
 
-# rbenv
-if [[ -x `which rbenv &> /dev/null` ]]; then
-  export PATH="$HOME/.rbenv/bin:$PATH"
-  eval "$(rbenv init -)"
-fi
-
-# pyenv
-PYENV_ROOT="${HOME}/.pyenv"
-if [ -d "${PYENV_ROOT}" ]; then
-  export PATH=${PYENV_ROOT}/bin:$PATH
-  eval "$(pyenv init -)"
-fi
-
 # nodebrew
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 export DYLD_LIBRARY_PATH=/usr/local/opt/cairo/lib
-
-# nodenv
-if [[ -x `which nodeenv &> /dev/null` ]]; then
-  eval "$(nodenv init -)"
-fi
 
 # direnv
 if which direnv > /dev/null 2>&1 ; then
@@ -133,3 +115,8 @@ export PATH="/usr/local/opt/avr-gcc@7/bin:$PATH"
 
 # dotnet
 export PATH="$PATH:/usr/local/share/dotnet:$HOME/.dotnet/tools"
+
+# anyenv
+if [ -d "$HOME/.anyenv" ]; then
+  eval "$(anyenv init - zsh)"
+fi
