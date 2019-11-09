@@ -6,7 +6,7 @@
 /vendor/bundle/
 fuel/app/config/isobe/*
 .vim/
-.vscode/extensions/
+.vscode
 .config/karabiner/karabiner.json
 .config/direnv/
 .config/gcloud/
