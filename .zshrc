@@ -73,7 +73,7 @@ _awscli-homebrew-installed() {
 export PATH=$PATH:~/bin
 
 # golang
-if [ -d "/usr/local/go" ]; then
+if [ -x `which go` ]; then
   export GOPATH=~/go
   export PATH=$PATH:$GOPATH/bin:/usr/local/go/bin
 fi
