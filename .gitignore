@@ -20,3 +20,4 @@ terraform.tfstate*
 .terraform
 *.tsvars
 *.code-workspace
+packaged.yaml
