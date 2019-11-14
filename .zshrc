@@ -90,10 +90,6 @@ function peco-src() {
 }
 zle -N peco-src
 
-# nodebrew
-export PATH=$HOME/.nodebrew/current/bin:$PATH
-export DYLD_LIBRARY_PATH=/usr/local/opt/cairo/lib
-
 # direnv
 if which direnv > /dev/null 2>&1 ; then
   eval "$(direnv hook zsh)"
