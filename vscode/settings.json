@@ -33,5 +33,7 @@
     "editor.wordWrap": "on",
     "aws.samcli.location": "/usr/local/bin/sam",
     "aws.telemetry": true,
-    "terminal.external.osxExec": "iTerm.app"
+    "terminal.external.osxExec": "iTerm.app",
+    "markdown.preview.scrollEditorWithPreview": false,
+    "markdown.preview.scrollPreviewWithEditor": false
 }
