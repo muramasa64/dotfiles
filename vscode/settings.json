@@ -45,5 +45,18 @@
         "editor.insertSpace": true
     },
     "japanese-proofreading.textlint.外来語カタカナ表記": false,
-    "japanese-proofreading.textlint.技術用語": false
+    "japanese-proofreading.textlint.技術用語": false,
+    "markdown.preview.scrollPreviewWithEditor": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features",
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    }
 }
