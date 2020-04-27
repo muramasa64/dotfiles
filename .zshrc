@@ -95,6 +95,10 @@ if which direnv > /dev/null 2>&1 ; then
   eval "$(direnv hook zsh)"
 fi
 
+if [ -d "/usr/local/Cellar/awscli/2.0.0/" ]; then
+  source /usr/local/Cellar/awscli/2.0.0/share/zsh/site-functions/aws_zsh_completer.sh
+fi
+
 # rust
 if [ -d "$HOME/.cargo" ]; then
   source $HOME/.cargo/env
