@@ -42,5 +42,6 @@
     "[markdown]": {
         "editor.tabSize": 4,
         "editor.insertSpace": true
-    }
+    },
+    "japanese-proofreading.textlint.外来語カタカナ表記": false
 }
