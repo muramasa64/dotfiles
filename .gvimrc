@@ -3,8 +3,8 @@ set lines=60
 set guioptions-=T
 
 set background=dark
-set gfn=Ricty\ Regular\ for\ Powerline:h24
-set gfw=Ricty\ Regular\ for\ Powerline:h24
+set gfn=Ricty\ Regular\ for\ Powerline:h14
+set gfw=Ricty\ Regular\ for\ Powerline:h14
 let g:PowerLine_symbols = 'fancy'
 set antialias
 
