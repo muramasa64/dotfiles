@@ -12,10 +12,11 @@
     "editor.fontLigatures": true,
     "markdownlint.run": "onSave",
     "markdownlint.config": {
-        "MD033": false,
-        "MD007": {
+        "no-inline-html": false,
+        "ul-indent": {
             "indent": 4
-        }
+        },
+        "no-bare-urls": false
     },
     "markdown-pdf.scale": 0.8,
     "editor.formatOnSave": true,
