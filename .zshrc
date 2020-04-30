@@ -72,12 +72,6 @@ _awscli-homebrew-installed() {
 ####################
 export PATH=$PATH:~/bin
 
-# golang
-if [ -x `which go` ]; then
-  export GOPATH=~/go
-  export PATH=$PATH:$GOPATH/bin:/usr/local/go/bin
-fi
-
 bindkey '^]' peco-src
 
 function peco-src() {
