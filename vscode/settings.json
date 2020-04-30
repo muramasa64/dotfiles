@@ -58,5 +58,6 @@
     },
     "[javascript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
-    }
+    },
+    "C_Cpp.formatting": "Disabled"
 }
