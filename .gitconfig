@@ -1,5 +1,5 @@
 [user]
-	name = ISOBE Kazuhiko
+	name = Isobe Kazuhiko
 	email = muramasa64@gmail.com
 [filter "media"]
 	clean = git-media-clean %f
@@ -30,8 +30,6 @@
 [merge]
 	defaultToUpstream = true
 	ff = false
-[pull]
-	rebase = preserve
 [branch "master"]
 	mergeoptions = --no-ff
 	rebase = true
