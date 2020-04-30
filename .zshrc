@@ -105,7 +105,7 @@ export LESS='--no-init --RAW-CONTROL --LONG-PROMPT'
 export PATH="$PATH:$HOME/google-cloud-sdk/bin"
 
 # gcc
-export PATH="/usr/local/opt/avr-gcc@7/bin:$PATH"
+export PATH="/usr/local/opt/avr-gcc/bin:$PATH"
 
 # dotnet
 export PATH="$PATH:/usr/local/share/dotnet:$HOME/.dotnet/tools"
