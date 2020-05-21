@@ -18,6 +18,9 @@ $Host.PrivateData.ProgressBackgroundColor = 'Cyan'
 if (Get-Module -ListAvailable -Name "PSReadline") {
     $options = Get-PSReadlineOption
 
+    # Emacs Keybinding
+    $optiots.EditMode = 'Emacs'
+
 	if ([System.Version](Get-Module PSReadline).Version -lt [System.Version]"2.0.0") {
 		# Foreground
 		$options.CommandForegroundColor = 'Yellow'
