@@ -1,3 +1,5 @@
+# Emacs Keybinding
+Set-PSReadLineOption -EditMode Emacs
 # Host Foreground
 $Host.PrivateData.ErrorForegroundColor = 'Red'
 $Host.PrivateData.WarningForegroundColor = 'Yellow'
