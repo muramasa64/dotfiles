@@ -63,6 +63,9 @@
     "markdownlint.customRules": [
         "{docsmsft.docs-linting}/markdownlint-custom-rules/rules.js"
     ],
+    "yaml.schemas": {
+        "file:///toc.schema.json": "/toc\\.yml/i"
+    },
     "cSpell.userWords": [
         "passwordless"
     ]
