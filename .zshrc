@@ -114,3 +114,11 @@ export PATH="$PATH:/usr/local/share/dotnet:$HOME/.dotnet/tools"
 if [ -d "$HOME/.anyenv" ]; then
   eval "$(anyenv init - zsh)"
 fi
+
+# golang
+export GOPATH="${HOME}/.go"
+export GOROOT="$(brew --prefix golang)/libexec"
+export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
+test -d "${GOPATH}" || mkdir "${GOPATH}"
+test -d "${GOPATH}/src/github.com" || mkdir -p "${GOPATH}/src/github.com"
+
