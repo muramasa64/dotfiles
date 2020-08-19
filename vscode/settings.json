@@ -16,9 +16,9 @@
         "ul-indent": {
             "indent": 4
         },
-        "no-bare-urls": false
+        "no-bare-urls": false,
+        "MD028": false
     },
-    "markdown-pdf.scale": 0.8,
     "editor.formatOnSave": true,
     "[elm]": {
         "editor.formatOnSave": true
@@ -45,7 +45,6 @@
         "editor.insertSpace": true
     },
     "japanese-proofreading.textlint.外来語カタカナ表記": false,
-    "japanese-proofreading.textlint.技術用語": false,
     "markdown.preview.scrollPreviewWithEditor": false,
     "editor.multiCursorModifier": "ctrlCmd",
     "files.insertFinalNewline": true,
@@ -67,6 +66,21 @@
         "file:///toc.schema.json": "/toc\\.yml/i"
     },
     "cSpell.userWords": [
-        "passwordless"
-    ]
+        "adcs",
+        "authn",
+        "intune",
+        "intunewin",
+        "jamf",
+        "kusto",
+        "mdatp",
+        "ndes",
+        "netskope",
+        "passwordless",
+        "sspr",
+        "totp",
+        "web",
+        "web authn"
+    ],
+    "explorer.confirmDragAndDrop": false,
+    "japanese-proofreading.textlint.ひらく漢字": false
 }
