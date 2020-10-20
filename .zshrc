@@ -116,7 +116,7 @@ if [ -d "$HOME/.anyenv" ]; then
 fi
 
 # golang
-export GOPATH="${HOME}/.go"
+export GOPATH="${HOME}/go"
 export GOROOT="$(brew --prefix golang)/libexec"
 export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 test -d "${GOPATH}" || mkdir "${GOPATH}"
