@@ -20,6 +20,8 @@
 	graph = log --graph --date-order -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --date=short
 [push]
 	default = simple
+[pull]
+    rebase = true
 [color]
 	ui = auto
 [color "diff-highlight"]
