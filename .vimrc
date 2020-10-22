@@ -134,7 +134,7 @@ Plug 'bronson/vim-trailing-whitespace'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/vim-easy-align'
 Plug 'elixir-lang/vim-elixir'
-Plug 'fatih/vim-go'
+" Plug 'fatih/vim-go'
 Plug 'nsf/gocode', {'rtp': 'vim/'}
 Plug 'rust-lang/rust.vim', { 'for': ['rust'] }
 Plug 'racer-rust/vim-racer', { 'for': ['rust'] }
@@ -277,11 +277,12 @@ let g:vim_markdown_folding_disabled = 1
 let g:vim_markdown_new_list_item_indent = 2
 
 " vim-go
-let g:go_fmt_command = "goimports"
-set autowrite
-map <C-n> :cnext<CR>
-map <C-m> :cprevious<CR>
-nnoremap <leader>a :cclose<CR>
+" let g:go_fmt_command = "gofmt"
+" let g:go_template_autocreate = "0"
+" set autowrite
+" map <C-n> :cnext<CR>
+" map <C-m> :cprevious<CR>
+" nnoremap <leader>a :cclose<CR>
 
 " gocode
 set completeopt=menu,preview
