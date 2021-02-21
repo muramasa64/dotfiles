@@ -15,6 +15,8 @@ fuel/app/config/isobe/*
 .config/NuGet/
 .config/anyenv/
 .config/AWSVPNClient/
+.config/iterm2/
+.config/fontconfig/
 *-py-venv/*
 .envrc
 terraform.tfstate*
