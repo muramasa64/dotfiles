@@ -54,12 +54,17 @@ case ${OSTYPE} in
         export CLICOLOR=1
         #alias ls='ls -G -F'
         alias vim='Vim'
-        alias rm='rmtrash'
+        alias rm='trash'
         ;;
     linux*)
         #Linux用の設定
         ;;
 esac
+
+# homebrew
+if [ -d "/opt/homebrew/bin" ]; then
+  export PATH=/opt/homebrew/bin:$PATH
+fi
 
 _homebrew-installed() {
   type brew &> /dev/null
