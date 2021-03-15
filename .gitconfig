@@ -52,3 +52,5 @@
 	date = iso
 [init]
 	defaultBranch = main
+[ghq]
+	root = ~/go/src
