@@ -17,7 +17,8 @@
             "indent": 4
         },
         "no-bare-urls": false,
-        "MD028": false
+        "MD028": false,
+        "MD024": false
     },
     "editor.formatOnSave": true,
     "[elm]": {
