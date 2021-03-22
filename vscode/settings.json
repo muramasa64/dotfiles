@@ -51,7 +51,7 @@
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "[typescript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features",
+        "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
@@ -83,5 +83,6 @@
         "web authn"
     ],
     "explorer.confirmDragAndDrop": false,
-    "japanese-proofreading.textlint.ひらく漢字": false
+    "japanese-proofreading.textlint.ひらく漢字": false,
+    "window.newWindowDimensions": "inherit"
 }
