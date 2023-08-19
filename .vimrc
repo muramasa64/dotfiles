@@ -3,7 +3,7 @@ set nocompatible
 set enc=utf-8
 set fenc=utf-8
 set fencs=utf-8,euc-jp,cp932,iso-2022-jp,ucs-bom,utf-16,utf-16le,utf-16be
-set ambiwidth=double
+set ambiwidth=single
 
 set ignorecase
 set smartcase
@@ -143,8 +143,9 @@ Plug 'cespare/vim-toml'
 Plug 'mindriot101/vim-yapf'
 Plug 'elmcast/elm-vim'
 Plug 'thinca/vim-quickrun', { 'for': ['rust'] }
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+"Plug 'vim-airline/vim-airline'
+"Plug 'vim-airline/vim-airline-themes'
+Plug 'nowerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plug 'leafgarland/typescript-vim'
 Plug 'hashivim/vim-terraform'
 Plug 'prabirshrestha/async.vim'
@@ -166,38 +167,42 @@ if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
 endif
 
+" Powerline
+let g:PowerLine_theme = 'short'
+let g:PowerLine_colorsheme = 'soralized256_dark'
+
 " Powerline forts
 set laststatus=2
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#buffer_idx_mode = 1
-let g:airline#extensions#whitespace#mixed_indent_algo = 1
-let g:airline_theme = 'solarized'
-let g:airline_solarized_bg='dark'
+"let g:airline_powerline_fonts = 1
+"let g:airline#extensions#tabline#enabled = 1
+"let g:airline#extensions#tabline#buffer_idx_mode = 1
+"let g:airline#extensions#whitespace#mixed_indent_algo = 1
+"let g:airline_theme = 'solarized'
+"let g:airline_solarized_bg='dark'
 
-if !exists('g:airline_symbols')
-  let g:airline_symbols = {}
-endif
+" if !exists('g:airline_symbols')
+"   let g:airline_symbols = {}
+" endif
 
 " unicode symbols
-"let g:airline_left_sep = '»'
-"let g:airline_left_sep = '▶'
-"let g:airline_right_sep = '«'
-"let g:airline_right_sep = '◀'
-let g:airline_symbols.crypt = '🔒'
-let g:airline_symbols.linenr = '☰'
-let g:airline_symbols.linenr = '␊'
-let g:airline_symbols.linenr = '␤'
-let g:airline_symbols.linenr = '¶'
-let g:airline_symbols.maxlinenr = ''
-let g:airline_symbols.maxlinenr = '㏑'
+" let g:airline_left_sep = '»'
+" let g:airline_left_sep = '▶'
+" let g:airline_right_sep = '«'
+" let g:airline_right_sep = '◀'
+" let g:airline_symbols.crypt = '🔒'
+" let g:airline_symbols.linenr = '☰'
+" let g:airline_symbols.linenr = '␊'
+" let g:airline_symbols.linenr = '␤'
+" let g:airline_symbols.linenr = '¶'
+" let g:airline_symbols.maxlinenr = ''
+" let g:airline_symbols.maxlinenr = '㏑'
 "let g:airline_symbols.branch = '⎇'
-let g:airline_symbols.paste = 'ρ'
-let g:airline_symbols.paste = 'Þ'
-let g:airline_symbols.paste = '∥'
-let g:airline_symbols.spell = 'Ꞩ'
-let g:airline_symbols.notexists = '∄'
-let g:airline_symbols.whitespace = 'Ξ'
+" let g:airline_symbols.paste = 'ρ'
+" let g:airline_symbols.paste = 'Þ'
+" let g:airline_symbols.paste = '∥'
+" let g:airline_symbols.spell = 'Ꞩ'
+" let g:airline_symbols.notexists = '∄'
+" let g:airline_symbols.whitespace = 'Ξ'
 
 " powerline symbols
 " let g:airline_left_sep = ''
@@ -209,13 +214,13 @@ let g:airline_symbols.whitespace = 'Ξ'
 " let g:airline_symbols.linenr = ''
 
 " old pewerline symbols
-let g:airline_left_sep = '⮀'
-let g:airline_left_alt_sep = '⮁'
-let g:airline_right_sep = '⮂'
-let g:airline_right_alt_sep = '⮃'
-let g:airline_symbols.branch = '⭠'
-let g:airline_symbols.readonly = '⭤'
-let g:airline_symbols.linenr = '⭡'
+"let g:airline_left_sep = '⮀'
+" let g:airline_left_alt_sep = '⮁'
+"let g:airline_right_sep = '⮂'
+" let g:airline_right_alt_sep = '⮃'
+" let g:airline_symbols.branch = '⭠'
+" let g:airline_symbols.readonly = '⭤'
+" let g:airline_symbols.linenr = '⭡'
 
 "" vimproc
 "if has('mac')
