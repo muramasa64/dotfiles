@@ -6,7 +6,6 @@
 /vendor/bundle/
 fuel/app/config/isobe/*
 .vim/
-.vscode
 .config/karabiner/
 .config/yarn/
 .config/direnv/
@@ -22,7 +21,6 @@ fuel/app/config/isobe/*
 terraform.tfstate*
 .terraform
 *.tsvars
-*.code-workspace
 packaged.yaml
 node_modules/
 __pycache__/
