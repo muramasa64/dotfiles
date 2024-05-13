@@ -1,88 +1,230 @@
 {
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.fontAliasing": "default",
-    "breadcrumbs.enabled": true,
-    "editor.fontFamily": "Ricty-Regular",
-    "editor.fontSize": 14,
-    "editor.lineHeight": 0,
-    "editor.letterSpacing": 0,
-    "window.zoomLevel": 0,
-    "workbench.colorTheme": "Solarized Dark",
-    "explorer.confirmDelete": false,
-    "editor.fontLigatures": true,
-    "markdownlint.run": "onSave",
-    "markdownlint.config": {
-        "no-inline-html": false,
-        "ul-indent": {
-            "indent": 4
-        },
-        "no-bare-urls": false,
-        "MD028": false,
-        "MD024": false
-    },
+  "[elm]": {
+    "editor.formatOnSave": true
+  },
+  "[erb]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[markdown]": {
+    "editor.formatOnSave": false,
+    "editor.tabSize": 2
+  },
+  "[ruby]": {
+    "editor.defaultFormatter": "Shopify.ruby-lsp",
     "editor.formatOnSave": true,
-    "[elm]": {
-        "editor.formatOnSave": true
-    },
-    "elm.analyseEnabled": true,
-    "elm.analyseCommand": "/Users/isobe/.nodebrew/current/bin/elm-analyse",
-    "elm.compiler": "/Users/isobe/.nodebrew/current/bin/elm",
-    "elm.makeCommand": "/Users/isobe/.nodebrew/current/bin/elm",
-    "elm.formatCommand": "/Users/isobe/.nodebrew/current/bin/elm-formatelm-format",
-    "terminal.integrated.shell.osx": "/bin/zsh",
-    "files.exclude": {
-        "**/.*.un~": true
-    },
-    "editor.renderWhitespace": "boundary",
-    "editor.tabCompletion": "on",
-    "editor.wordWrap": "on",
-    "aws.samcli.location": "/usr/local/bin/sam",
-    "aws.telemetry": true,
-    "terminal.external.osxExec": "iTerm.app",
-    "markdown.preview.scrollEditorWithPreview": false,
-    "markdown.preview.scrollPreviewWithEditor": false,
-    "[markdown]": {
-        "editor.tabSize": 4,
-        "editor.insertSpace": true
-    },
-    "japanese-proofreading.textlint.外来語カタカナ表記": false,
-    "markdown.preview.scrollPreviewWithEditor": false,
-    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.formatOnType": true,
+    "editor.insertSpaces": true,
+    "editor.rulers": [
+      120
+    ],
+    "editor.semanticHighlighting.enabled": true,
+    "editor.tabSize": 2,
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
-    "[typescript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
+    "files.trimTrailingWhitespace": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[yaml]": {
+    "editor.insertSpaces": true,
+    "editor.quickSuggestions": {
+      "comments": false,
+      "other": true,
+      "strings": true
     },
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "[javascript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
-    "C_Cpp.formatting": "Disabled",
-    "markdownlint.customRules": [
-        "{docsmsft.docs-linting}/markdownlint-custom-rules/rules.js"
-    ],
-    "yaml.schemas": {
-        "file:///toc.schema.json": "/toc\\.yml/i"
-    },
-    "cSpell.userWords": [
-        "adcs",
-        "authn",
-        "intune",
-        "intunewin",
-        "jamf",
-        "kusto",
-        "mdatp",
-        "ndes",
-        "netskope",
-        "passwordless",
-        "sspr",
-        "totp",
-        "web",
-        "web authn"
-    ],
-    "explorer.confirmDragAndDrop": false,
-    "japanese-proofreading.textlint.ひらく漢字": false,
-    "window.newWindowDimensions": "inherit"
+    "editor.tabSize": 2
+  },
+  "breadcrumbs.enabled": true,
+  "breadcrumbs.showArrays": true,
+  "dev.containers.defaultExtensions": [
+    "mhutchie.git-graph"
+  ],
+  "dev.containers.defaultFeatures": {},
+  "editor.accessibilitySupport": "off",
+  "editor.fontFamily": "HackGen Console",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.insertSpaces": true,
+  "editor.largeFileOptimizations": false,
+  "editor.letterSpacing": 0,
+  "editor.lineHeight": 0,
+  "editor.minimap.enabled": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.renderWhitespace": "boundary",
+  "editor.suggestSelection": "first",
+  "editor.tabCompletion": "on",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "comment",
+          "comment.block",
+          "comment.block.documentation",
+          "comment.line",
+          "constant",
+          "constant.character",
+          "constant.character.escape",
+          "constant.numeric",
+          "constant.numeric.integer",
+          "constant.numeric.float",
+          "constant.numeric.hex",
+          "constant.numeric.octal",
+          "constant.other",
+          "constant.regexp",
+          "constant.rgb-value",
+          "emphasis",
+          "entity",
+          "entity.name",
+          "entity.name.class",
+          "entity.name.function",
+          "entity.name.method",
+          "entity.name.section",
+          "entity.name.selector",
+          "entity.name.tag",
+          "entity.name.type",
+          "entity.other",
+          "entity.other.attribute-name",
+          "entity.other.inherited-class",
+          "invalid",
+          "invalid.deprecated",
+          "invalid.illegal",
+          "keyword",
+          "keyword.control",
+          "keyword.operator",
+          "keyword.operator.new",
+          "keyword.operator.assignment",
+          "keyword.operator.arithmetic",
+          "keyword.operator.logical",
+          "keyword.other",
+          "markup",
+          "markup.bold",
+          "markup.changed",
+          "markup.deleted",
+          "markup.heading",
+          "markup.inline.raw",
+          "markup.inserted",
+          "markup.italic",
+          "markup.list",
+          "markup.list.numbered",
+          "markup.list.unnumbered",
+          "markup.other",
+          "markup.quote",
+          "markup.raw",
+          "markup.underline",
+          "markup.underline.link",
+          "meta",
+          "meta.block",
+          "meta.cast",
+          "meta.class",
+          "meta.function",
+          "meta.function-call",
+          "meta.preprocessor",
+          "meta.return-type",
+          "meta.selector",
+          "meta.tag",
+          "meta.type.annotation",
+          "meta.type",
+          "punctuation.definition.string.begin",
+          "punctuation.definition.string.end",
+          "punctuation.separator",
+          "punctuation.separator.continuation",
+          "punctuation.terminator",
+          "storage",
+          "storage.modifier",
+          "storage.type",
+          "string",
+          "string.interpolated",
+          "string.other",
+          "string.quoted",
+          "string.quoted.double",
+          "string.quoted.other",
+          "string.quoted.single",
+          "string.quoted.triple",
+          "string.regexp",
+          "string.unquoted",
+          "strong",
+          "support",
+          "support.class",
+          "support.constant",
+          "support.function",
+          "support.other",
+          "support.type",
+          "support.type.property-name",
+          "support.variable",
+          "variable",
+          "variable.language",
+          "variable.name",
+          "variable.other",
+          "variable.other.readwrite",
+          "variable.parameter"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  "editor.wordWrap": "on",
+  "explorer.confirmDelete": false,
+  "extensions.ignoreRecommendations": true,
+  "files.exclude": {
+    "**/.*.un~": true,
+    "**/.classpath": true,
+    "**/.factorypath": true,
+    "**/.project": true,
+    "**/.settings": true
+  },
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "git.openRepositoryInParentFolders": "never",
+  "json.maxItemsComputed": 500000,
+  "markdown-pdf.StatusbarMessageTimeout": 100000,
+  "markdown.marp.enableHtml": true,
+  "markdown.marp.strictPathResolutionDuringExport": true,
+  "markdown.preview.scrollEditorWithPreview": false,
+  "markdown.preview.scrollPreviewWithEditor": false,
+  "redhat.telemetry.enabled": true,
+  "ruby.codeCompletion": "rcodetools",
+  "ruby.intellisense": "rubyLocate",
+  "ruby.lint": {
+    "rubocop": true
+  },
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.integrated.defaultProfile.osx": "fish",
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1",
+    "CW_NEW_SESSION": "1"
+  },
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.scrollback": 10000,
+  "window.newWindowDimensions": "inherit",
+  "workbench.colorTheme": "Tokyo Night Storm",
+  "workbench.editor.enablePreview": false,
+  "workbench.fontAliasing": "default",
+  "workbench.startupEditor": "newUntitledFile",
+  "yaml.format.printWidth": 120,
+"yaml.format.singleQuote": true,
+  "terminal.integrated.fontFamily": "HackGen Console NF",
+  "aws.suppressPrompts": {
+    "codeWhispererConnectionExpired": true
+  },
+  "markdown-pdf.mermaidServer": "https://unpkg.com/mermaid@9.4.3/dist/mermaid.min.js",
+  "aws.codeWhisperer.importRecommendation": false,
+  "aws.codeWhisperer.includeSuggestionsWithCodeReferences": false,
+  "aws.codeWhisperer.shareCodeWhispererContentWithAWS": false,
+  "editor.fontVariations": false,
+  "vim.easymotion": true,
+  "markdown.marp.themes": [
+    "https://cloudnative.box.com/shared/static/5qhivolhofqomt24tqeepdllms207tzi.css"
+  ],
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.codeActionsOnSave": {}
 }

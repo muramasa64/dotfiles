@@ -1,10 +1,55 @@
 [
-    { "key": "cmd+numpad_add",      "command": "editor.action.fontZoomIn", "when": "editorTextForcus"},
-    { "key": "shift+cmd+=",         "command": "editor.action.fontZoomIn", "when": "editorTextForcus"},
-    { "key": "cmd+=",               "command": "editor.action.fontZoomIn", "when": "editorTextForcus" },
-    { "key": "cmd+numpad_subtract", "command": "editor.action.fontZoomOut", "when": "editorTextForcus" },
-    { "key": "shift+cmd+-",         "command": "editor.action.fontZoomOut", "when": "editorTextForcus" },
-    { "key": "cmd+-",               "command": "editor.action.fontZoomOut", "when": "editorTextForcus" },
-    { "key": "cmd+numpad0",         "command": "editor.action.fontZoomReset" },
-    { "key": "cmd+0",               "command": "editor.action.fontZoomReset" },
-] 
+    {
+        "key": "cmd+numpad_add",
+        "command": "editor.action.fontZoomIn",
+        "when": "editorTextForcus"
+    },
+    {
+        "key": "shift+cmd+=",
+        "command": "editor.action.fontZoomIn",
+        "when": "editorTextForcus"
+    },
+    {
+        "key": "cmd+=",
+        "command": "editor.action.fontZoomIn",
+        "when": "editorTextForcus"
+    },
+    {
+        "key": "cmd+numpad_subtract",
+        "command": "editor.action.fontZoomOut",
+        "when": "editorTextForcus"
+    },
+    {
+        "key": "shift+cmd+-",
+        "command": "editor.action.fontZoomOut",
+        "when": "editorTextForcus"
+    },
+    {
+        "key": "cmd+-",
+        "command": "editor.action.fontZoomOut",
+        "when": "editorTextForcus"
+    },
+    {
+        "key": "cmd+numpad0",
+        "command": "editor.action.fontZoomReset"
+    },
+    {
+        "key": "cmd+0",
+        "command": "editor.action.fontZoomReset"
+    },
+    {
+        "key": "shift+cmd+e",
+        "command": "workbench.view.explorer",
+        "when": "viewContainer.workbench.view.explorer.enabled"
+    },
+    {
+        "key": "shift+cmd+e",
+        "command": "-workbench.view.explorer",
+        "when": "viewContainer.workbench.view.explorer.enabled"
+    },
+    {
+        "key": "cmd+w",
+        "command": "-workbench.action.closeWindow",
+        "when": "!editorIsOpen && !multipleEditorGroups"
+    },
+]
