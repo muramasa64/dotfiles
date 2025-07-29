@@ -1,3 +1,5 @@
+# CodeWhisperer pre block. Keep at the top of this file.
+[[ -f "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.pre.zsh"
 source ~/.zsh.d/zshrc
 
 # for ssh complete
@@ -77,17 +79,17 @@ _awscli-homebrew-installed() {
 ####################
 export PATH=$PATH:~/bin
 
-bindkey '^]' peco-src
+# bindkey '^]' peco-src
 
-function peco-src() {
-	local src=$(ghq list --full-path|peco --query "$LBUFFER")
-	if [ -n "$src" ]; then
-		BUFFER="cd $src"
-		zle accept-line
-	fi
-	zle -R -c
-}
-zle -N peco-src
+# function peco-src() {
+#	local src=$(ghq list --full-path|peco --query "$LBUFFER")
+#	if [ -n "$src" ]; then
+#		BUFFER="cd $src"
+#		zle accept-line
+#	fi
+#	zle -R -c
+#}
+#zle -N peco-src
 
 # direnv
 if which direnv > /dev/null 2>&1 ; then
@@ -127,3 +129,8 @@ export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 test -d "${GOPATH}" || mkdir "${GOPATH}"
 test -d "${GOPATH}/src/github.com" || mkdir -p "${GOPATH}/src/github.com"
 
+# java
+# export PATH="/Library/Java/JavaVirtualMachines/amazon-corretto-19.jdk/Contents/Home/bin:$PATH"
+
+# CodeWhisperer post block. Keep at the bottom of this file.
+[[ -f "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.post.zsh"

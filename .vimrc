@@ -128,7 +128,7 @@ Plug 'kana/vim-submode'
 Plug 'stephpy/vim-yaml'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
-Plug 'altercation/vim-colors-solarized'
+" Plug 'altercation/vim-colors-solarized'
 Plug 'bronson/vim-trailing-whitespace'
 " Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
@@ -143,9 +143,9 @@ Plug 'cespare/vim-toml'
 Plug 'mindriot101/vim-yapf'
 Plug 'elmcast/elm-vim'
 Plug 'thinca/vim-quickrun', { 'for': ['rust'] }
-"Plug 'vim-airline/vim-airline'
-"Plug 'vim-airline/vim-airline-themes'
-Plug 'nowerline/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+" Plug 'nowerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plug 'leafgarland/typescript-vim'
 Plug 'hashivim/vim-terraform'
 Plug 'prabirshrestha/async.vim'
@@ -153,6 +153,7 @@ Plug 'prabirshrestha/vim-lsp'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'mattn/vim-lsp-settings'
+Plug 'chriskempson/base16-vim'
 if has('python')
   Plug 'davidhalter/jedi-vim'
 endif
@@ -168,17 +169,17 @@ if filereadable(expand('~/.vimrc.local'))
 endif
 
 " Powerline
-let g:PowerLine_theme = 'short'
-let g:PowerLine_colorsheme = 'soralized256_dark'
+" let g:PowerLine_theme = 'short'
+" let g:PowerLine_colorsheme = 'soralized256_dark'
 
 " Powerline forts
 set laststatus=2
-"let g:airline_powerline_fonts = 1
-"let g:airline#extensions#tabline#enabled = 1
-"let g:airline#extensions#tabline#buffer_idx_mode = 1
-"let g:airline#extensions#whitespace#mixed_indent_algo = 1
-"let g:airline_theme = 'solarized'
-"let g:airline_solarized_bg='dark'
+" let g:airline_powerline_fonts = 1
+" let g:airline#extensions#tabline#enabled = 1
+" let g:airline#extensions#tabline#buffer_idx_mode = 1
+" let g:airline#extensions#whitespace#mixed_indent_algo = 1
+" let g:airline_theme = 'solarized'
+" let g:airline_solarized_bg='dark'
 
 " if !exists('g:airline_symbols')
 "   let g:airline_symbols = {}
@@ -246,13 +247,13 @@ nnoremap <silent> ,ur :<C-u>Unite -buffer-name=register register<CR>
 nnoremap <silent> ,uu :<C-u>Unite file_mru buffer<CR>
 
 " solarized
-syntax enable
-set background=dark
-let g:solarized_termcolor = 256
-let g:solarized_visibility = "normal"
-let g:solarized_contrast = "normal"
-let g:solarized_termtrans = 1
-colorscheme solarized
+"syntax enable
+"set background=dark
+" let g:solarized_termcolor = 256
+" let g:solarized_visibility = "normal"
+" let g:solarized_contrast = "normal"
+" let g:solarized_termtrans = 1
+" colorscheme solarized
 
 " vim-gitgutter
 "nnoremap <silent> ,gg :<C-u>GitGutterToggle<CR>
@@ -320,7 +321,23 @@ let g:terraform_fmt_on_save = 1
 
 " Minimal Configuration for juliosueiras/vim-terraform-completion
 " Syntastic Config
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
 
+" base16 shell
+"if exists('$BASE16_THEME')
+"      \ && (!exists('g:colors_name') || g:colors_name != 'base16-$BASE16_THEME')
+"    let base16colorspace=256
+"    colorscheme base16-$BASE16_THEME
+"endif
+if exists('$BASE16_THEME')
+      \ && (!exists('g:colors_name') || g:colors_name != 'base16-$BASE16_THEME')
+    let base16colorspace=256
+    colorscheme base16-$BASE16_THEME
+endif
+
+"if filereadable(expand("~/.vimrc_background"))
+"  let base16colorspace=256
+"  source ~/.vimrc_background
+"endif

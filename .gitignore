@@ -17,10 +17,11 @@ fuel/app/config/isobe/*
 .config/iterm2/
 .config/fontconfig/
 *-py-venv/*
-.envrc
 terraform.tfstate*
 .terraform
-*.tsvars
+*.tfvars
 packaged.yaml
 node_modules/
 __pycache__/
+.mise.toml
+.jj

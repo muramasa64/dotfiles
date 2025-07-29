@@ -6,3 +6,4 @@ if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
 
 # for rabbit
 export DYLD_LIBRARY_PATH=/usr/local/opt/cairo/lib
+. "$HOME/.cargo/env"

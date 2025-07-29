@@ -16,12 +16,19 @@
           },
           "to": [
             {
-              "key_code": "left_shift"
+              "key_code": "left_shift",
+              "lazy": true
             }
           ],
           "to_if_alone": [
             {
               "key_code": "spacebar"
+            }
+          ],
+          "to_if_held_down" : [
+            {
+              "key_code": "spacebar",
+              "repeat": true
             }
           ]
         }
